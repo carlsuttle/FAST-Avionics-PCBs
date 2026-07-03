@@ -1,0 +1,95 @@
+** Drc report for FLIGHT CONTROLLER.kicad_pcb **
+** Created on 2026-06-20T13:38:03 **
+** Report includes: Errors, Exclusions **
+
+** Found 23 DRC violations **
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(190.5000 mm, 105.0000 mm): Footprint BMI 270
+
+** Found 2 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(191.4525 mm, 104.5000 mm): Pad 7 [/GND] of BMI 270 on F.Cu
+    @(191.4525 mm, 105.0000 mm): Pad 6 [/GND] of BMI 270 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(191.4525 mm, 105.0000 mm): Pad 6 [/GND] of BMI 270 on F.Cu
+    @(65.0000 mm, 73.0000 mm): Zone 'FGND' [/GND] on F.Cu, priority 1
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

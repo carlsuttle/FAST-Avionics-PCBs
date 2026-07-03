@@ -1,0 +1,9 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "teensy") (type "KiCad") (uri "${KIPRJMOD}/lib/symbols/teensy.kicad_sym") (options "") (descr "XenGi Teensy symbol library"))
+	(lib (name "xiao") (type "KiCad") (uri "${KIPRJMOD}/lib/symbols/xiao.kicad_sym") (options "") (descr "Seeed Studio XIAO ESP32-S3 symbol library"))
+	(lib (name "fast_teensy") (type "KiCad") (uri "${KIPRJMOD}/lib/symbols/fast_teensy.kicad_sym") (options "") (descr "FAST Teensy 4.0 DIP carrier symbol library"))
+	(lib (name "fast_power") (type "KiCad") (uri "${KIPRJMOD}/lib/symbols/fast_power.kicad_sym") (options "") (descr "FAST project-local power helper symbols"))
+	(lib (name "fast_common") (type "KiCad") (uri "${KIPRJMOD}/lib/symbols/fast_common.kicad_sym") (options "") (descr "FAST project-local common module symbols"))
+	(lib (name "BMI_270") (type "KiCad") (uri "${KIPRJMOD}/lib/symbols/BMI_270.kicad_sym") (options "") (descr "FAST project-local BMI270 symbols"))
+)

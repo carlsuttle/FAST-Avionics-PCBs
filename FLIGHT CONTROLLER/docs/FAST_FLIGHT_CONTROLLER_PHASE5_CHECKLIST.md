@@ -1,0 +1,26 @@
+# FAST Flight Controller Phase 5 Checklist
+
+- [x] J3 IMU pin 1 confirmed as `+5V_ESC_BEC`
+- [x] Servo connector footprint available: `fast_common:PinHeader_1x03_P2.54mm`
+- [x] CH1 A/B connectors added
+- [x] CH2 A/B connectors added
+- [x] CH3 A/B connectors added
+- [x] CH4 A/B connectors added
+- [x] CH5 A/B connectors added
+- [x] CH6 spare PWM connector added because it is defined in the source pin map
+- [x] A/B connectors share the same PWM net per channel
+- [x] All servo pin 1 pins connected to `+5V_ESC_BEC`
+- [x] All servo pin 2 pins connected to `GND`
+- [x] All servo pin 3 pins connected to correct PWM signal nets
+- [x] Teensy PWM pin map source documented
+- [x] No servo power connected to `TEENSY_3V3`
+- [x] No servo power connected to `ESP_3V3`
+- [x] CRSF nets preserved by name and updated to current-code U1 D15/D14 pins
+- [x] Phase 1 transport nets preserved
+- [x] SD module nets preserved
+- [x] IMU nets preserved
+- [x] AS_GPS_XIAO_OUTBOARD nets preserved
+- [x] Netlist export passed
+- [x] ERC run
+- [x] Remaining ERC items explained in `FAST_FLIGHT_CONTROLLER_PHASE5_ERC.rpt`
+- [x] No PCB placement or routing performed

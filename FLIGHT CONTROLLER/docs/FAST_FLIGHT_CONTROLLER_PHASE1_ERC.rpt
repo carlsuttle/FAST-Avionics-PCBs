@@ -1,0 +1,120 @@
+ERC report (2026-06-14T14:18:45, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 85.09 mm): Symbol U1 Pin GND1 [GND, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(68.58 mm, 85.09 mm): Symbol U1 Pin GND1 [GND, Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 87.63 mm): Symbol U1 Pin D0 [D0_/_RX1, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 90.17 mm): Symbol U1 Pin D1 [D1_/_TX1, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 92.71 mm): Symbol U1 Pin D2 [D2, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 95.25 mm): Symbol U1 Pin D3 [D3, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 97.79 mm): Symbol U1 Pin D4 [D4, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 100.33 mm): Symbol U1 Pin D5 [D5, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 102.87 mm): Symbol U1 Pin D6 [D6, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 105.41 mm): Symbol U1 Pin D7 [D7, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 107.95 mm): Symbol U1 Pin D8 [D8, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 85.09 mm): Symbol U1 Pin VIN [VIN_/_5V, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(109.22 mm, 85.09 mm): Symbol U1 Pin VIN [VIN_/_5V, Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 87.63 mm): Symbol U1 Pin GND2 [GND, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(109.22 mm, 87.63 mm): Symbol U1 Pin GND2 [GND, Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 90.17 mm): Symbol U1 Pin 3V3 [3V3, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(109.22 mm, 90.17 mm): Symbol U1 Pin 3V3 [3V3, Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 92.71 mm): Symbol U1 Pin D23 [D23_/_A9, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 95.25 mm): Symbol U1 Pin D22 [D22_/_A8, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 97.79 mm): Symbol U1 Pin D21 [D21_/_A7, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 100.33 mm): Symbol U1 Pin D20 [D20_/_A6, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 102.87 mm): Symbol U1 Pin D19 [D19_/_A5_/_SCL, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 105.41 mm): Symbol U1 Pin D18 [D18_/_A4_/_SDA, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 107.95 mm): Symbol U1 Pin D17 [D17_/_A3, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 110.49 mm): Symbol U1 Pin D16 [D16_/_A2, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 113.03 mm): Symbol U1 Pin D15 [D15_/_A1, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 115.57 mm): Symbol U1 Pin D14 [D14_/_A0, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(124.46 mm, 106.68 mm): Symbol U2 Pin 1 [GPIO1_A0_D0, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(124.46 mm, 110.49 mm): Symbol U2 Pin 2 [GPIO2_A1_D1, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(124.46 mm, 114.30 mm): Symbol U2 Pin 3 [GPIO3_A2_D2, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(124.46 mm, 118.11 mm): Symbol U2 Pin 4 [GPIO4_A3_D3, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(124.46 mm, 121.92 mm): Symbol U2 Pin 5 [GPIO5_A4_D4_SDA, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(124.46 mm, 125.73 mm): Symbol U2 Pin 6 [GPIO6_A5_D5_SCL, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(171.45 mm, 106.68 mm): Symbol U2 Pin 14 [VBUS, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(171.45 mm, 110.49 mm): Symbol U2 Pin 13 [GND, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(171.45 mm, 114.30 mm): Symbol U2 Pin 12 [3V3, Passive, Line]
+
+ ** ERC messages: 36  Errors 36  Warnings 0
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

@@ -1,0 +1,1618 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\dell\\OneDrive\\Documents\\KiCad\\10.0\\projects\\FLIGHT CONTROLLER\\FLIGHT CONTROLLER.kicad_sch")
+		(date "2026-06-15T11:36:49")
+		(tool "Eeschema 10.0.3")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "FAST Flight Controller Rev A")
+				(company "FAST Avionics Lab")
+				(rev "Phase 3")
+				(date "2026-06-14")
+				(source "FLIGHT CONTROLLER.kicad_sch")
+				(comment
+					(number "1")
+					(value "ESC/BEC regulated 5V input powers Teensy VIN and XIAO VBUS")
+				)
+				(comment
+					(number "2")
+					(value "ESP_AIR vertical SD module uses GPIO1, GPIO2, GPIO5, and GPIO6")
+				)
+				(comment
+					(number "3")
+					(value "TEENSY_3V3 and ESP_3V3 are kept separate")
+				)
+				(comment
+					(number "4")
+					(value "MOSI/MISO mapped by signal direction")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "100 uF >=10V bulk")
+			(footprint "fast_teensy:C_Radial_D5.0mm_P2.00mm")
+			(description "ESC/BEC input bulk capacitor placeholder")
+			(fields
+				(field
+					(name "Footprint") "fast_teensy:C_Radial_D5.0mm_P2.00mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "ESC/BEC input bulk capacitor placeholder")
+			)
+			(libsource
+				(lib "fast_power")
+				(part "FAST_Capacitor")
+				(description "FAST generic capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "FLIGHT CONTROLLER.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fa6d47d6-0634-4921-aeb1-ab4c82d0d9fd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "10 uF >=10V")
+			(footprint "fast_teensy:C_0805")
+			(description "ESC/BEC input ceramic capacitor placeholder")
+			(fields
+				(field
+					(name "Footprint") "fast_teensy:C_0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "ESC/BEC input ceramic capacitor placeholder")
+			)
+			(libsource
+				(lib "fast_power")
+				(part "FAST_Capacitor")
+				(description "FAST generic capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "FLIGHT CONTROLLER.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7af0747f-2c7b-4e7a-aa7d-9cfb142a0e46")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C3")
+			(value "100 nF")
+			(footprint "fast_teensy:C_0805")
+			(description "ESC/BEC input decoupling capacitor placeholder")
+			(fields
+				(field
+					(name "Footprint") "fast_teensy:C_0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "ESC/BEC input decoupling capacitor placeholder")
+			)
+			(libsource
+				(lib "fast_power")
+				(part "FAST_Capacitor")
+				(description "FAST generic capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "FLIGHT CONTROLLER.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9203ed22-575c-43a3-8a0c-e08a2d7b9670")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "ESC_BEC_5V_IN")
+			(footprint "fast_teensy:PinHeader_1x02_P2.54mm")
+			(description "Provisional 2-pin ESC/BEC 5V input header")
+			(fields
+				(field
+					(name "Footprint") "fast_teensy:PinHeader_1x02_P2.54mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Provisional 2-pin ESC/BEC 5V input header")
+			)
+			(libsource
+				(lib "fast_power")
+				(part "FAST_Conn_01x02")
+				(description "FAST provisional 2-pin power input connector")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "FLIGHT CONTROLLER.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3051bac1-c3c3-421f-a0f4-277db5ab2c21")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "ESP_AIR_SD_MODULE")
+			(footprint "fast_common:SD_Module_1x06_Vertical_Daughterboard")
+			(description "Six-pin SPI SD-card breakout module mounted vertically; verify physical orientation before PCB layout")
+			(fields
+				(field
+					(name "Footprint") "fast_common:SD_Module_1x06_Vertical_Daughterboard")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Six-pin SPI SD-card breakout module mounted vertically; verify physical orientation before PCB layout")
+			)
+			(libsource
+				(lib "fast_common")
+				(part "SD_Module_1x06")
+				(description "Six-pin SPI SD-card breakout module mounted vertically as a daughterboard")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "FLIGHT CONTROLLER.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "14a07d95-e826-454b-aaca-d0f559a207ac")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP1")
+			(value "+5V_ESC_BEC")
+			(footprint "fast_teensy:TestPoint_THTPad_D1.5mm")
+			(description "5V rail test point")
+			(fields
+				(field
+					(name "Footprint") "fast_teensy:TestPoint_THTPad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "5V rail test point")
+			)
+			(libsource
+				(lib "fast_power")
+				(part "FAST_TestPoint")
+				(description "FAST test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "FLIGHT CONTROLLER.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1f265ed7-c5d8-4961-a0c1-182ce971341c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP2")
+			(value "GND")
+			(footprint "fast_teensy:TestPoint_THTPad_D1.5mm")
+			(description "Ground test point")
+			(fields
+				(field
+					(name "Footprint") "fast_teensy:TestPoint_THTPad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Ground test point")
+			)
+			(libsource
+				(lib "fast_power")
+				(part "FAST_TestPoint")
+				(description "FAST test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "FLIGHT CONTROLLER.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b8d84e69-4c31-4d79-a76b-5c220b4df2a2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP3")
+			(value "TEENSY_3V3")
+			(footprint "fast_teensy:TestPoint_THTPad_D1.5mm")
+			(description "Teensy-generated 3V3 rail test point")
+			(fields
+				(field
+					(name "Footprint") "fast_teensy:TestPoint_THTPad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Teensy-generated 3V3 rail test point")
+			)
+			(libsource
+				(lib "fast_power")
+				(part "FAST_TestPoint")
+				(description "FAST test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "FLIGHT CONTROLLER.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c76bfb33-e707-4c82-81ed-8248566b9318")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP4")
+			(value "ESP_3V3")
+			(footprint "fast_teensy:TestPoint_THTPad_D1.5mm")
+			(description "ESP-generated 3V3 rail test point")
+			(fields
+				(field
+					(name "Footprint") "fast_teensy:TestPoint_THTPad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "ESP-generated 3V3 rail test point")
+			)
+			(libsource
+				(lib "fast_power")
+				(part "FAST_TestPoint")
+				(description "FAST test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "FLIGHT CONTROLLER.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e6456ab2-fc30-4d95-809b-ae8eed533ddf")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "FAST Teensy 4.0 DIP Carrier")
+			(footprint "fast_teensy:FAST_Teensy40_DIP_Carrier")
+			(description "FAST Teensy 4.0 plug-in side-header carrier")
+			(fields
+				(field
+					(name "Footprint") "fast_teensy:FAST_Teensy40_DIP_Carrier")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "FAST Teensy 4.0 plug-in side-header carrier")
+			)
+			(libsource
+				(lib "fast_teensy")
+				(part "FAST_Teensy40_DIP_Carrier")
+				(description "FAST carrier symbol for Teensy 4.0 plug-in module; normal 2.54 mm side headers only")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "FLIGHT CONTROLLER.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7e85439e-2bc6-4eed-923b-54888d5a74d8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "GND1")
+						)
+						(pin
+							(num "D0")
+						)
+						(pin
+							(num "D1")
+						)
+						(pin
+							(num "D2")
+						)
+						(pin
+							(num "D3")
+						)
+						(pin
+							(num "D4")
+						)
+						(pin
+							(num "D5")
+						)
+						(pin
+							(num "D6")
+						)
+						(pin
+							(num "D7")
+						)
+						(pin
+							(num "D8")
+						)
+						(pin
+							(num "D9")
+						)
+						(pin
+							(num "D10")
+						)
+						(pin
+							(num "D11")
+						)
+						(pin
+							(num "D12")
+						)
+						(pin
+							(num "VIN")
+						)
+						(pin
+							(num "GND2")
+						)
+						(pin
+							(num "3V3")
+						)
+						(pin
+							(num "D23")
+						)
+						(pin
+							(num "D22")
+						)
+						(pin
+							(num "D21")
+						)
+						(pin
+							(num "D20")
+						)
+						(pin
+							(num "D19")
+						)
+						(pin
+							(num "D18")
+						)
+						(pin
+							(num "D17")
+						)
+						(pin
+							(num "D16")
+						)
+						(pin
+							(num "D15")
+						)
+						(pin
+							(num "D14")
+						)
+						(pin
+							(num "D13")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "ESP_AIR / XIAO ESP32-S3")
+			(footprint "xiao:XIAO-ESP32-S3-DIP")
+			(description "Seeed XIAO ESP32-S3 used as ESP_AIR")
+			(fields
+				(field
+					(name "Footprint") "xiao:XIAO-ESP32-S3-DIP")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Seeed XIAO ESP32-S3 used as ESP_AIR")
+			)
+			(libsource
+				(lib "xiao")
+				(part "XIAO-ESP32-S3-DIP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "FLIGHT CONTROLLER.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7faba578-6567-4a54-9ece-605d1b891f62")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "8")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "fast_common")
+			(part "SD_Module_1x06")
+			(description "Six-pin SPI SD-card breakout module mounted vertically as a daughterboard")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "SD_Module_1x06")
+				(field
+					(name "Footprint") "fast_common:SD_Module_1x06_Vertical_Daughterboard")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Six-pin SPI SD-card breakout module mounted vertically as a daughterboard")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "CS")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "SCK")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "MOSI")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "MISO")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "VCC")
+					(type "power_in")
+				)
+				(pin
+					(num "6")
+					(name "GND")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "fast_power")
+			(part "FAST_Capacitor")
+			(description "FAST generic capacitor")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "FAST generic capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "fast_power")
+			(part "FAST_Conn_01x02")
+			(description "FAST provisional 2-pin power input connector")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "FAST_Conn_01x02")
+				(field
+					(name "Footprint") "fast_teensy:PinHeader_1x02_P2.54mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "FAST provisional 2-pin power input connector")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "+5V_ESC_BEC")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "fast_power")
+			(part "FAST_TestPoint")
+			(description "FAST test point")
+			(fields
+				(field
+					(name "Reference") "TP")
+				(field
+					(name "Value") "TestPoint")
+				(field
+					(name "Footprint") "fast_teensy:TestPoint_THTPad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "FAST test point")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "fast_teensy")
+			(part "FAST_Teensy40_DIP_Carrier")
+			(description "FAST carrier symbol for Teensy 4.0 plug-in module; normal 2.54 mm side headers only")
+			(docs "https://www.pjrc.com/store/teensy40.html")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "FAST_Teensy40_DIP_Carrier")
+				(field
+					(name "Footprint") "fast_teensy:FAST_Teensy40_DIP_Carrier")
+				(field
+					(name "Datasheet") "https://www.pjrc.com/store/teensy40.html")
+				(field
+					(name "Description") "FAST carrier symbol for Teensy 4.0 plug-in module; normal 2.54 mm side headers only")
+			)
+			(pins
+				(pin
+					(num "3V3")
+					(name "3V3")
+					(type "power_out")
+				)
+				(pin
+					(num "D0")
+					(name "D0_/_RX1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D1")
+					(name "D1_/_TX1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D2")
+					(name "D2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D3")
+					(name "D3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D4")
+					(name "D4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D5")
+					(name "D5")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D6")
+					(name "D6")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D7")
+					(name "D7")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D8")
+					(name "D8")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D9")
+					(name "D9_/_DATA_READY")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D10")
+					(name "D10_/_CS")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D11")
+					(name "D11_/_SPI_SDO")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D12")
+					(name "D12_/_SPI_SDI")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D13")
+					(name "D13_/_SCK_/_LED")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D14")
+					(name "D14_/_A0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D15")
+					(name "D15_/_A1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D16")
+					(name "D16_/_A2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D17")
+					(name "D17_/_A3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D18")
+					(name "D18_/_A4_/_SDA")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D19")
+					(name "D19_/_A5_/_SCL")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D20")
+					(name "D20_/_A6")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D21")
+					(name "D21_/_A7")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D22")
+					(name "D22_/_A8")
+					(type "bidirectional")
+				)
+				(pin
+					(num "D23")
+					(name "D23_/_A9")
+					(type "bidirectional")
+				)
+				(pin
+					(num "GND1")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "GND2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "VIN")
+					(name "VIN_/_5V")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "xiao")
+			(part "XIAO-ESP32-S3-DIP")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "XIAO-ESP32-S3-DIP")
+				(field
+					(name "Footprint") "Seeed_Studio_XIAO_Series:XIAO-ESP32-S3-DIP")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "GPIO1_A0_D0")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GPIO2_A1_D1")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "GPIO3_A2_D2")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "GPIO4_A3_D3")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "GPIO5_A4_D4_SDA")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "GPIO6_A5_D5_SCL")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "GPIO43_D6_TX")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "GPIO44_D7_RX")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "GPIO7_A8_D8_SCK")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "GPIO8_A9_D9_MISO")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "GPIO9_A10_D10_MOSI")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "3V3")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "14")
+					(name "VBUS")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "fast_common")
+			(uri "${KIPRJMOD}/lib/symbols/fast_common.kicad_sym")
+		)
+		(library
+			(logical "fast_power")
+			(uri "${KIPRJMOD}/lib/symbols/fast_power.kicad_sym")
+		)
+		(library
+			(logical "fast_teensy")
+			(uri "${KIPRJMOD}/lib/symbols/fast_teensy.kicad_sym")
+		)
+		(library
+			(logical "xiao")
+			(uri "${KIPRJMOD}/lib/symbols/xiao.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "/+5V_ESC_BEC")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "+5V_ESC_BEC_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "5")
+				(pinfunction "VCC_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "TP1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "VIN")
+				(pinfunction "VIN_/_5V_VIN")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "14")
+				(pinfunction "VBUS_14")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "2")
+			(name "/ESP_3V3")
+			(class "Default")
+			(node
+				(ref "TP4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "12")
+				(pinfunction "3V3_12")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "/ESP_SD_CS")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "CS_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "GPIO2_A1_D1_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
+			(name "/ESP_SD_MISO")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "4")
+				(pinfunction "MISO_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "GPIO1_A0_D0_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "/ESP_SD_MOSI")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "3")
+				(pinfunction "MOSI_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "6")
+				(pinfunction "GPIO6_A5_D5_SCL_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "/ESP_SD_SCK")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "SCK_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "5")
+				(pinfunction "GPIO5_A4_D4_SDA_5")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "7")
+			(name "/FAST_DATA_READY")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D9")
+				(pinfunction "D9_/_DATA_READY_D9")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "U2")
+				(pin "7")
+				(pinfunction "GPIO43_D6_TX_7")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
+			(name "/FAST_SPI_CS")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D10")
+				(pinfunction "D10_/_CS_D10")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "U2")
+				(pin "8")
+				(pinfunction "GPIO44_D7_RX_8")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "/FAST_SPI_MISO_TEENSY_SDO_TO_ESP")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D11")
+				(pinfunction "D11_/_SPI_SDO_D11")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "U2")
+				(pin "11")
+				(pinfunction "GPIO9_A10_D10_MOSI_11")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "10")
+			(name "/FAST_SPI_MOSI_ESP_TO_TEENSY_SDI")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D12")
+				(pinfunction "D12_/_SPI_SDI_D12")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "U2")
+				(pin "10")
+				(pinfunction "GPIO8_A9_D9_MISO_10")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "/FAST_SPI_SCK")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D13")
+				(pinfunction "D13_/_SCK_/_LED_D13")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "U2")
+				(pin "9")
+				(pinfunction "GPIO7_A8_D8_SCK_9")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "/GND")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "6")
+				(pinfunction "GND_6")
+				(pintype "power_in")
+			)
+			(node
+				(ref "TP2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "GND1")
+				(pinfunction "GND_GND1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "GND2")
+				(pinfunction "GND_GND2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "13")
+				(pinfunction "GND_13")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "/TEENSY_3V3")
+			(class "Default")
+			(node
+				(ref "TP3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3V3")
+				(pinfunction "3V3_3V3")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "14")
+			(name "unconnected-(U1-D0_{slash}_RX1-PadD0)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D0")
+				(pinfunction "D0_/_RX1_D0")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "15")
+			(name "unconnected-(U1-D1_{slash}_TX1-PadD1)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D1")
+				(pinfunction "D1_/_TX1_D1")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "16")
+			(name "unconnected-(U1-D14_{slash}_A0-PadD14)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D14")
+				(pinfunction "D14_/_A0_D14")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "17")
+			(name "unconnected-(U1-D15_{slash}_A1-PadD15)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D15")
+				(pinfunction "D15_/_A1_D15")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "18")
+			(name "unconnected-(U1-D16_{slash}_A2-PadD16)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D16")
+				(pinfunction "D16_/_A2_D16")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "19")
+			(name "unconnected-(U1-D17_{slash}_A3-PadD17)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D17")
+				(pinfunction "D17_/_A3_D17")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "20")
+			(name "unconnected-(U1-D18_{slash}_A4_{slash}_SDA-PadD18)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D18")
+				(pinfunction "D18_/_A4_/_SDA_D18")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "21")
+			(name "unconnected-(U1-D19_{slash}_A5_{slash}_SCL-PadD19)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D19")
+				(pinfunction "D19_/_A5_/_SCL_D19")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "22")
+			(name "unconnected-(U1-D20_{slash}_A6-PadD20)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D20")
+				(pinfunction "D20_/_A6_D20")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "23")
+			(name "unconnected-(U1-D21_{slash}_A7-PadD21)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D21")
+				(pinfunction "D21_/_A7_D21")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "24")
+			(name "unconnected-(U1-D22_{slash}_A8-PadD22)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D22")
+				(pinfunction "D22_/_A8_D22")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "25")
+			(name "unconnected-(U1-D23_{slash}_A9-PadD23)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D23")
+				(pinfunction "D23_/_A9_D23")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "26")
+			(name "unconnected-(U1-PadD2)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D2")
+				(pinfunction "D2_D2")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "27")
+			(name "unconnected-(U1-PadD3)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D3")
+				(pinfunction "D3_D3")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "28")
+			(name "unconnected-(U1-PadD4)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D4")
+				(pinfunction "D4_D4")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "29")
+			(name "unconnected-(U1-PadD5)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D5")
+				(pinfunction "D5_D5")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "30")
+			(name "unconnected-(U1-PadD6)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D6")
+				(pinfunction "D6_D6")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "31")
+			(name "unconnected-(U1-PadD7)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D7")
+				(pinfunction "D7_D7")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "32")
+			(name "unconnected-(U1-PadD8)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "D8")
+				(pinfunction "D8_D8")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "33")
+			(name "unconnected-(U2-GPIO3_A2_D2-Pad3)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "GPIO3_A2_D2_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "34")
+			(name "unconnected-(U2-GPIO4_A3_D3-Pad4)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "GPIO4_A3_D3_4")
+				(pintype "passive")
+			)
+		)
+	)
+)

@@ -1,0 +1,9 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "teensy") (type "KiCad") (uri "${KIPRJMOD}/lib/footprints/teensy.pretty") (options "") (descr "XenGi Teensy footprint library"))
+	(lib (name "xiao") (type "KiCad") (uri "${KIPRJMOD}/lib/footprints/xiao.pretty") (options "") (descr "Seeed Studio XIAO ESP32-S3 footprint library"))
+	(lib (name "fast_teensy") (type "KiCad") (uri "${KIPRJMOD}/lib/footprints/fast_teensy.pretty") (options "") (descr "FAST Teensy and Phase 2 provisional footprints"))
+	(lib (name "fast_power") (type "KiCad") (uri "${KIPRJMOD}/lib/footprints/fast_power.pretty") (options "") (descr "FAST project-local provisional footprints"))
+	(lib (name "fast_common") (type "KiCad") (uri "${KIPRJMOD}/lib/footprints/fast_common.pretty") (options "") (descr "FAST project-local common module footprints"))
+	(lib (name "BMI_270") (type "KiCad") (uri "${KIPRJMOD}/lib/footprints/BMI_270.pretty") (options "") (descr "BMI 270"))
+)

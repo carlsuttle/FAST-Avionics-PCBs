@@ -1,0 +1,78 @@
+ERC report (2026-06-15T14:45:56, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[pin_not_connected]: Pin not connected
+    ; error
+    @(38.10 mm, 86.36 mm): Symbol U1 Pin D6 [D6, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(78.74 mm, 76.20 mm): Symbol U1 Pin D23 [D23_/_A9, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(78.74 mm, 78.74 mm): Symbol U1 Pin D22 [D22_/_A8, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(78.74 mm, 81.28 mm): Symbol U1 Pin D21 [D21_/_A7, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(78.74 mm, 83.82 mm): Symbol U1 Pin D20 [D20_/_A6, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(78.74 mm, 91.44 mm): Symbol U1 Pin D17 [D17_/_A3, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(78.74 mm, 93.98 mm): Symbol U1 Pin D16 [D16_/_A2, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(125.73 mm, 97.79 mm): Symbol U2 Pin 3 [GPIO3_A2_D2, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(125.73 mm, 101.60 mm): Symbol U2 Pin 4 [GPIO4_A3_D3, Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(48.26 mm, 167.64 mm): Symbol J1 [FAST_Conn_01x02]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(58.42 mm, 85.09 mm): Symbol U1 [FAST_Teensy40_DIP_Carrier]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(86.36 mm, 151.13 mm): Symbol C1 [FAST_Capacitor]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(86.36 mm, 162.56 mm): Symbol C2 [FAST_Capacitor]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(86.36 mm, 173.99 mm): Symbol C3 [FAST_Capacitor]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(130.81 mm, 147.32 mm): Symbol TP1 [FAST_TestPoint]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(130.81 mm, 156.21 mm): Symbol TP2 [FAST_TestPoint]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(130.81 mm, 166.37 mm): Symbol TP3 [FAST_TestPoint]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(130.81 mm, 176.53 mm): Symbol TP4 [FAST_TestPoint]
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 130.81 mm): Label 'IMU_INT'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(195.58 mm, 133.35 mm): Label 'IMU_CS_OR_AUX'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(229.87 mm, 154.94 mm): Label 'OUTBOARD_SPARE1'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(229.87 mm, 157.48 mm): Label 'OUTBOARD_SPARE2'
+
+ ** ERC messages: 22  Errors 9  Warnings 13
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

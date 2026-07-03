@@ -1,0 +1,15 @@
+# KiCad user preferences and local caches
+*.kicad_prl
+fp-info-cache
+
+# KiCad locks, autosaves, and temporary files
+*.lck
+_autosave-*
+*.tmp
+
+# KiCad and editor backups
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.bak
+*-backups/
+.history/

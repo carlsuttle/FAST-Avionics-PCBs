@@ -1,0 +1,8909 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "bdae0752-8a30-41a1-9c82-31a8dd37afac")
+	(paper "A4")
+	(title_block
+		(title "FAST Flight Controller Rev A")
+		(date "2026-06-14")
+		(rev "Phase 5")
+		(company "FAST Avionics Lab")
+		(comment 1 "ESC/BEC regulated 5V input powers Teensy VIN and XIAO VBUS")
+		(comment 2 "Phase 5 adds RC servo PWM output connectors")
+		(comment 3 "TEENSY_3V3 and ESP_3V3 are kept separate")
+		(comment 4 "MOSI/MISO mapped by signal direction")
+	)
+	(lib_symbols
+		(symbol "Device:C_Polarized"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Diode:PMEG4050EP"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PMEG4050EP"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-128"
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG4050EP.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "40V, 5A low Vf Schottky barrier rectifier, SOD-128"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "forward voltage diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?128*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PMEG4050EP_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PMEG4050EP_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Power_Protection:TVS0500DRV"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 2.54 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TVS0500DRV"
+				(at 2.54 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
+				(at 5.08 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tvs0500.pdf"
+				(at -2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Flat-Clamp Surge Protection Device. 5Vrwm, WSON-6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "EMI, ESD, TVS protection transient"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "WSON*1EP*2x2mm*P0.65mm*EP1x1.6mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TVS0500DRV_0_0"
+				(rectangle
+					(start -11.43 2.54)
+					(end -5.08 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.255 2.54) (xy -8.255 3.81) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.255 -2.54) (xy -8.255 -3.81) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy -1.778 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Det &"
+					(at -8.255 0.635 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "Drv"
+					(at -8.255 -1.27 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "TVS0500DRV_0_1"
+				(rectangle
+					(start -12.065 5.08)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 1.397) (xy -2.286 -1.524)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 0) (xy -5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 1.778) (xy -1.778 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.889 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -1.27) (xy -1.143 -1.651) (xy -1.143 -0.889) (xy -0.127 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.27) (xy -1.778 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TVS0500DRV_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54)
+					(hide yes)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54)
+					(hide yes)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "fast_common:PinHeader_1x03"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PinHeader_1x03"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "FAST provisional 1x03 2.54 mm through-hole RC servo connector"
+				(at 0 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PinHeader_1x03_0_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PinHeader_1x03_1_1"
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "fast_common:PinHeader_1x04"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PinHeader_1x04"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "fast_common:PinHeader_1x04_P2.54mm"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "FAST provisional 1x04 2.54 mm through-hole connector"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PinHeader_1x04_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PinHeader_1x04_1_1"
+				(pin passive line
+					(at -10.16 3.81 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 1.27 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -1.27 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -3.81 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "fast_common:PinHeader_1x06"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PinHeader_1x06"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "fast_common:PinHeader_1x06_P2.54mm"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "FAST provisional 1x06 2.54 mm through-hole connector"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PinHeader_1x06_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PinHeader_1x06_1_1"
+				(pin passive line
+					(at -10.16 6.35 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 3.81 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 1.27 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -1.27 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -3.81 0)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -6.35 0)
+					(length 5.08)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "fast_common:SD_Module_1x06"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SD_Module_1x06"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "fast_common:SD_Module_1x06_Vertical_Daughterboard"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Six-pin SPI SD-card breakout module mounted vertically as a daughterboard"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SD_Module_1x06_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "SD MODULE"
+					(at 0 0 90)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "SD_Module_1x06_1_1"
+				(pin passive line
+					(at -12.7 6.35 0)
+					(length 5.08)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 3.81 0)
+					(length 5.08)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 1.27 0)
+					(length 5.08)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -1.27 0)
+					(length 5.08)
+					(name "MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 -3.81 0)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 -6.35 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "fast_power:FAST_Capacitor"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "C"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "FAST generic capacitor"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FAST_Capacitor_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FAST_Capacitor_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "fast_power:FAST_PWR_FLAG"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power flag for externally supplied rail"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FAST_PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 0 2.54) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FAST_PWR_FLAG_1_1"
+				(pin power_out line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "pwr"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "fast_power:FAST_TestPoint"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "fast_teensy:TestPoint_THTPad_D1.5mm"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "FAST test point"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FAST_TestPoint_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.016)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FAST_TestPoint_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "fast_teensy:FAST_Teensy40_DIP_Carrier"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FAST_Teensy40_DIP_Carrier"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "fast_teensy:FAST_Teensy40_DIP_Carrier"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.pjrc.com/store/teensy40.html"
+				(at 0 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "FAST carrier symbol for Teensy 4.0 plug-in module; normal 2.54 mm side headers only"
+				(at 0 -27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FAST_Teensy40_DIP_Carrier_0_1"
+				(rectangle
+					(start -15.24 17.78)
+					(end 15.24 -17.78)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "FAST Teensy 4.0 DIP Carrier"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "FAST_Teensy40_DIP_Carrier_1_1"
+				(pin power_out line
+					(at 20.32 11.43 180)
+					(length 5.08)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 13.97 0)
+					(length 5.08)
+					(name "D0_/_RX1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 11.43 0)
+					(length 5.08)
+					(name "D1_/_TX1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 8.89 0)
+					(length 5.08)
+					(name "D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 6.35 0)
+					(length 5.08)
+					(name "D3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 3.81 0)
+					(length 5.08)
+					(name "D4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 1.27 0)
+					(length 5.08)
+					(name "D5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -1.27 0)
+					(length 5.08)
+					(name "D6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -3.81 0)
+					(length 5.08)
+					(name "D7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -6.35 0)
+					(length 5.08)
+					(name "D8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -8.89 0)
+					(length 5.08)
+					(name "D9_/_DATA_READY"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -11.43 0)
+					(length 5.08)
+					(name "D10_/_CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -13.97 0)
+					(length 5.08)
+					(name "D11_/_SPI_SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -16.51 0)
+					(length 5.08)
+					(name "D12_/_SPI_SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -16.51 180)
+					(length 5.08)
+					(name "D13_/_SCK_/_LED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -13.97 180)
+					(length 5.08)
+					(name "D14_/_A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -11.43 180)
+					(length 5.08)
+					(name "D15_/_A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -8.89 180)
+					(length 5.08)
+					(name "D16_/_A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -6.35 180)
+					(length 5.08)
+					(name "D17_/_A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -3.81 180)
+					(length 5.08)
+					(name "D18_/_A4_/_SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -1.27 180)
+					(length 5.08)
+					(name "D19_/_A5_/_SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 1.27 180)
+					(length 5.08)
+					(name "D20_/_A6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 3.81 180)
+					(length 5.08)
+					(name "D21_/_A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 6.35 180)
+					(length 5.08)
+					(name "D22_/_A8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 8.89 180)
+					(length 5.08)
+					(name "D23_/_A9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 16.51 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "GND1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 13.97 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "GND2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 16.51 180)
+					(length 5.08)
+					(name "VIN_/_5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "xiao:XIAO-ESP32-S3-DIP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 1.27 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "XIAO-ESP32-S3-DIP"
+				(at 9.652 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Seeed_Studio_XIAO_Series:XIAO-ESP32-S3-DIP"
+				(at 17.018 -31.75 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "XIAO-ESP32-S3-DIP_1_0"
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 41.91 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -8.89) (xy 0 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -12.7) (xy 0 -8.89)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -16.51) (xy 0 -12.7)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -30.48) (xy 0 -16.51)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 41.91 -2.54) (xy 41.91 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 41.91 -5.08) (xy 41.91 -8.89)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 41.91 -8.89) (xy 41.91 -12.7)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 41.91 -12.7) (xy 41.91 -30.48)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 41.91 -30.48) (xy 0 -30.48)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 43.18 -5.08) (xy 41.91 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 43.18 -8.89) (xy 41.91 -8.89)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 43.18 -12.7) (xy 41.91 -12.7)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 43.18 -16.51) (xy 41.91 -16.51)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 43.18 -20.32) (xy 41.91 -20.32)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 43.18 -24.13) (xy 41.91 -24.13)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 43.18 -27.94) (xy 41.91 -27.94)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 -5.08 0)
+					(length 2.54)
+					(name "GPIO1_A0_D0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -8.89 0)
+					(length 2.54)
+					(name "GPIO2_A1_D1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -12.7 0)
+					(length 2.54)
+					(name "GPIO3_A2_D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -16.51 0)
+					(length 2.54)
+					(name "GPIO4_A3_D3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -20.32 0)
+					(length 2.54)
+					(name "GPIO5_A4_D4_SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -24.13 0)
+					(length 2.54)
+					(name "GPIO6_A5_D5_SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -27.94 0)
+					(length 2.54)
+					(name "GPIO43_D6_TX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 44.45 -27.94 180)
+					(length 2.54)
+					(name "GPIO44_D7_RX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 44.45 -24.13 180)
+					(length 2.54)
+					(name "GPIO7_A8_D8_SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 44.45 -20.32 180)
+					(length 2.54)
+					(name "GPIO8_A9_D9_MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 44.45 -16.51 180)
+					(length 2.54)
+					(name "GPIO9_A10_D10_MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 44.45 -12.7 180)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 44.45 -8.89 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 44.45 -5.08 180)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "External ESC/BEC supplies regulated +5V_ESC_BEC. No onboard regulator or PCB routing added in this phase."
+		(exclude_from_sim no)
+		(at 16.256 20.828 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2ddacb3c-ae9f-4531-b1c7-e20ba2d2873e")
+	)
+	(text "FAST Flight Controller Rev A - Phase 3 ESP_AIR SD module"
+		(exclude_from_sim no)
+		(at 16.256 17.018 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3d66fc57-f1a3-439f-a8da-875975afd788")
+	)
+	(text "IMU VCC = +5V_ESC_BEC. IMU breakout must provide Teensy-safe 3.3 V logic on SCL/SDA, or external level shifting is required."
+		(exclude_from_sim no)
+		(at 16.256 28.448 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4c6c77ea-dc76-4f67-88c9-7fb9e20ee5f4")
+	)
+	(text "Servo +5 V rail is +5V_ESC_BEC. Size PCB traces/connectors for servo current before layout."
+		(exclude_from_sim no)
+		(at 16.764 32.004 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5953ba72-8140-4e12-ae11-c4631c6ab453")
+	)
+	(text "Vertical SD breakout module: CS=GPIO2/D1, SCK=GPIO5/D4, MOSI=GPIO6/D5, MISO=GPIO1/D0. VCC=+5V_ESC_BEC."
+		(exclude_from_sim no)
+		(at 16.256 24.638 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f2061a6d-25dc-4b44-b8ee-83786f2e538a")
+	)
+	(junction
+		(at 168.91 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a1aac48-7040-4fec-af6f-a20d3d80864a")
+	)
+	(no_connect
+		(at 100.33 49.53)
+		(uuid "1595eb8f-4060-4339-ad50-2fd0accfc393")
+	)
+	(no_connect
+		(at 43.18 73.66)
+		(uuid "27a9679c-9fcf-4c38-9af7-ec5c2584e989")
+	)
+	(no_connect
+		(at 86.36 86.36)
+		(uuid "3bbcd1c5-62b5-40b1-883f-f074b142578f")
+	)
+	(no_connect
+		(at 144.78 49.53)
+		(uuid "49456422-674f-4d30-863b-032d28545576")
+	)
+	(no_connect
+		(at 125.73 101.6)
+		(uuid "4fcecc1e-ab3b-4349-a22c-5704a649b293")
+	)
+	(no_connect
+		(at 201.93 25.4)
+		(uuid "57478c63-1b35-4497-935a-d5de3432fb1d")
+	)
+	(no_connect
+		(at 125.73 97.79)
+		(uuid "5f673e2a-d3e3-4754-aed8-4d82b1d71b34")
+	)
+	(no_connect
+		(at 100.33 52.07)
+		(uuid "7264edba-52b5-4962-b47e-18c982be09e4")
+	)
+	(no_connect
+		(at 144.78 52.07)
+		(uuid "83eae0db-dc14-49ac-a10f-fe60395af260")
+	)
+	(no_connect
+		(at 43.18 71.12)
+		(uuid "e984e702-c42d-45e1-a3c3-f013c78b71a7")
+	)
+	(no_connect
+		(at 86.36 88.9)
+		(uuid "ebc3d842-f0fc-4bf5-9767-f839c1019227")
+	)
+	(wire
+		(pts
+			(xy 129.54 130.81) (xy 113.03 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "012cc05b-5a2c-430e-a098-de78f2b77a4a")
+	)
+	(wire
+		(pts
+			(xy 38.1 120.65) (xy 175.26 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "020f1037-6189-40f9-b91d-a87b2918cfb1")
+	)
+	(wire
+		(pts
+			(xy 257.81 109.22) (xy 252.73 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0230af8d-3f15-4289-b7fe-d395b50dee7e")
+	)
+	(wire
+		(pts
+			(xy 125.73 93.98) (xy 116.84 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "050187ec-dd39-4db5-8d86-5e8956450297")
+	)
+	(wire
+		(pts
+			(xy 43.18 78.74) (xy 25.4 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07e81c86-0cab-4537-aef4-13c7af78eb79")
+	)
+	(wire
+		(pts
+			(xy 73.66 154.94) (xy 78.74 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09005a9f-8d77-4563-b7da-46065d7b4cfc")
+	)
+	(wire
+		(pts
+			(xy 257.81 129.54) (xy 252.73 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a5fcdc7-fd4f-41be-b6d0-d25c4f2d850d")
+	)
+	(wire
+		(pts
+			(xy 76.2 132.08) (xy 81.28 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c5faa1f-ee92-48e1-b698-f74bfa4cd69f")
+	)
+	(wire
+		(pts
+			(xy 147.32 71.12) (xy 146.05 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f2c62c4-24f1-4a3c-af7a-9f5015a6db92")
+	)
+	(wire
+		(pts
+			(xy 257.81 58.42) (xy 252.73 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10949e5d-cef1-4834-bd59-fb602a2c26cf")
+	)
+	(wire
+		(pts
+			(xy 257.81 53.34) (xy 252.73 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "139565a0-0bae-41e2-a2ca-7f6f9bfadc1f")
+	)
+	(wire
+		(pts
+			(xy 149.86 41.91) (xy 144.78 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "141d5e47-e7db-45a3-b4ec-a99828ef716b")
+	)
+	(wire
+		(pts
+			(xy 35.56 113.03) (xy 125.73 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15896150-49b0-49f3-aa68-1f92fc860ae5")
+	)
+	(wire
+		(pts
+			(xy 66.04 154.94) (xy 52.07 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15ce99b7-f1fd-4e59-95f7-64389f0b649e")
+	)
+	(wire
+		(pts
+			(xy 172.72 93.98) (xy 182.88 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18fedeb3-a5ce-4ec9-9d24-b5934b824491")
+	)
+	(wire
+		(pts
+			(xy 74.93 177.8) (xy 80.01 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19696ba5-e5a7-4377-a65b-046582825676")
+	)
+	(wire
+		(pts
+			(xy 86.36 76.2) (xy 83.82 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dcd98e5-c873-4f72-9edd-7781d32d7e11")
+	)
+	(wire
+		(pts
+			(xy 257.81 160.02) (xy 252.73 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f09cd78-27bd-4960-8680-b48e17e20db2")
+	)
+	(wire
+		(pts
+			(xy 76.2 143.51) (xy 81.28 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25c6af26-6122-4b49-88be-ed5a4472c507")
+	)
+	(wire
+		(pts
+			(xy 125.73 90.17) (xy 118.11 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "288a0963-3167-4533-9229-409c959c07a8")
+	)
+	(wire
+		(pts
+			(xy 257.81 142.24) (xy 252.73 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28e1e67e-958b-493c-b6d8-55563969f76b")
+	)
+	(wire
+		(pts
+			(xy 257.81 93.98) (xy 252.73 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "295f5abc-7f01-4adf-a165-2643c5ed1bb0")
+	)
+	(wire
+		(pts
+			(xy 25.4 88.9) (xy 43.18 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cd7f00a-9f70-49f8-b99a-7b3c17c8172e")
+	)
+	(wire
+		(pts
+			(xy 43.18 68.58) (xy 38.1 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e957025-8394-4d7f-9398-b009cece3515")
+	)
+	(wire
+		(pts
+			(xy 177.8 118.11) (xy 177.8 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "338a5066-202e-47f7-859c-2d26ab947803")
+	)
+	(wire
+		(pts
+			(xy 105.41 41.91) (xy 100.33 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3868a8e8-90a6-4400-8520-199951ed828b")
+	)
+	(wire
+		(pts
+			(xy 187.96 127) (xy 181.61 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a6509db-ff97-42c1-9651-3447c65d4da7")
+	)
+	(wire
+		(pts
+			(xy 177.8 113.03) (xy 172.72 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c053e8c-fe7d-48b1-b733-4516c3d9206f")
+	)
+	(wire
+		(pts
+			(xy 64.77 177.8) (xy 52.07 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d9c26fc-441f-4ab6-939d-f9721912f2f7")
+	)
+	(wire
+		(pts
+			(xy 257.81 45.72) (xy 252.73 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e755ab3-79e7-4482-9c2e-3ed32d9228c1")
+	)
+	(wire
+		(pts
+			(xy 39.37 107.95) (xy 53.34 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fe2ea2a-d684-4f23-a151-07fc4ad2b3ad")
+	)
+	(wire
+		(pts
+			(xy 45.72 44.45) (xy 40.64 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42784129-15bb-4994-a70f-e07555aa2386")
+	)
+	(wire
+		(pts
+			(xy 35.56 93.98) (xy 35.56 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43a960b2-c695-4d1e-b5de-1634f319a9b7")
+	)
+	(wire
+		(pts
+			(xy 36.83 118.11) (xy 177.8 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43b92d1f-6251-4cbe-9243-68ce9ca71f83")
+	)
+	(wire
+		(pts
+			(xy 86.36 68.58) (xy 83.82 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47ee6953-b308-4110-bf47-82fbe0048a77")
+	)
+	(wire
+		(pts
+			(xy 86.36 78.74) (xy 83.82 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "483fef45-c934-43dc-bc71-8860f64dc556")
+	)
+	(wire
+		(pts
+			(xy 147.32 66.04) (xy 146.05 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dda0d7a-8856-4032-82b3-48abc1847976")
+	)
+	(wire
+		(pts
+			(xy 257.81 43.18) (xy 252.73 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "543beab7-b549-4b91-8354-2d5d66b927cc")
+	)
+	(wire
+		(pts
+			(xy 38.1 99.06) (xy 43.18 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5441b5c7-8a05-4596-b57f-ca0c06a5f2ca")
+	)
+	(wire
+		(pts
+			(xy 168.91 127) (xy 154.94 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5687aeeb-ffcd-4b35-9a4b-eb0070595c98")
+	)
+	(wire
+		(pts
+			(xy 105.41 39.37) (xy 100.33 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5af9abfb-3048-44a0-9851-c68ced30af93")
+	)
+	(wire
+		(pts
+			(xy 257.81 78.74) (xy 252.73 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b06e99c-db52-48da-827f-c1c8242009b1")
+	)
+	(wire
+		(pts
+			(xy 257.81 55.88) (xy 252.73 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ca8cfee-b827-4040-a758-81c85eed1156")
+	)
+	(wire
+		(pts
+			(xy 257.81 147.32) (xy 252.73 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f57c167-f3bd-4782-a95c-eceeae15c2f0")
+	)
+	(wire
+		(pts
+			(xy 149.86 39.37) (xy 144.78 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60b2eca4-fc24-4061-9705-8e313628ec00")
+	)
+	(wire
+		(pts
+			(xy 24.13 162.56) (xy 29.21 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6186c6af-f05f-458d-93b1-4394ef625f89")
+	)
+	(wire
+		(pts
+			(xy 257.81 96.52) (xy 252.73 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66f6ed0a-d516-4354-94df-a944cdf696e4")
+	)
+	(wire
+		(pts
+			(xy 83.82 86.36) (xy 86.36 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "672e3a2c-17f8-4917-acbb-24bf7c7e8309")
+	)
+	(wire
+		(pts
+			(xy 257.81 30.48) (xy 252.73 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67a5c969-33c0-47e0-a804-c830616f8dc7")
+	)
+	(wire
+		(pts
+			(xy 172.72 105.41) (xy 177.8 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "685c753e-4aac-48ae-b65f-0c42115df800")
+	)
+	(wire
+		(pts
+			(xy 24.13 190.5) (xy 29.21 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68ca29cc-e0f3-4c08-82b9-1e490d6e74ff")
+	)
+	(wire
+		(pts
+			(xy 125.73 109.22) (xy 119.38 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69034ae1-398c-425b-b4c3-95a6bd8a10ed")
+	)
+	(wire
+		(pts
+			(xy 257.81 121.92) (xy 252.73 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a5094e2-1230-41a1-b43a-1bd596ac361a")
+	)
+	(wire
+		(pts
+			(xy 173.99 127) (xy 168.91 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6af9369a-3d40-4ca5-91a9-a94972d50355")
+	)
+	(wire
+		(pts
+			(xy 86.36 83.82) (xy 83.82 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d635781-0863-44fd-b244-49c09c37d4b4")
+	)
+	(wire
+		(pts
+			(xy 43.18 96.52) (xy 36.83 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "712f09a1-b92b-44a8-b55b-af207e847358")
+	)
+	(wire
+		(pts
+			(xy 87.63 91.44) (xy 83.82 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76139690-5c11-464d-b8ac-2f6ed000608e")
+	)
+	(wire
+		(pts
+			(xy 106.68 138.43) (xy 129.54 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7884ad22-5591-49b1-bc4b-01e7e8821e5c")
+	)
+	(wire
+		(pts
+			(xy 43.18 93.98) (xy 35.56 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78e9be78-27ab-4db0-91a6-bf1a5ddc5f2d")
+	)
+	(wire
+		(pts
+			(xy 257.81 116.84) (xy 252.73 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f6b052f-b5e5-4e00-8d1f-416cd4e3bcc1")
+	)
+	(wire
+		(pts
+			(xy 187.96 149.86) (xy 187.96 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "806963d1-6a4a-4f4f-9194-575a5a8e0cfe")
+	)
+	(wire
+		(pts
+			(xy 83.82 88.9) (xy 86.36 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81db6a0f-5f41-4fc0-9f8d-4cd028eeafde")
+	)
+	(wire
+		(pts
+			(xy 43.18 76.2) (xy 25.4 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82fb1a5d-7cb4-4d3e-a2b9-6ab95968837f")
+	)
+	(wire
+		(pts
+			(xy 64.77 189.23) (xy 50.8 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "839a29e0-cf34-40d5-a9c5-33f0b022e0b2")
+	)
+	(wire
+		(pts
+			(xy 125.73 105.41) (xy 118.11 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83eecce5-b9b2-4c8b-ac51-267c540a27ca")
+	)
+	(wire
+		(pts
+			(xy 87.63 71.12) (xy 83.82 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "858a23c3-2c5d-423b-b02c-37fc30387777")
+	)
+	(wire
+		(pts
+			(xy 45.72 39.37) (xy 40.64 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "861a9e90-03e4-43d1-8849-7f4fdfeef1be")
+	)
+	(wire
+		(pts
+			(xy 172.72 90.17) (xy 182.88 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8818bdd6-0645-493e-82ed-5a618efae360")
+	)
+	(wire
+		(pts
+			(xy 74.93 189.23) (xy 80.01 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8947fa76-b5a5-426b-a9a5-687b8f14fc12")
+	)
+	(wire
+		(pts
+			(xy 66.04 143.51) (xy 52.07 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8caa0eae-8820-40a7-9fd3-301d59d06c1a")
+	)
+	(wire
+		(pts
+			(xy 74.93 166.37) (xy 80.01 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d4010b5-31ee-47d1-8c82-97790581b5c5")
+	)
+	(wire
+		(pts
+			(xy 43.18 91.44) (xy 25.4 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e45c56b-a8a3-42bf-bc89-ed7f8258fafb")
+	)
+	(wire
+		(pts
+			(xy 257.81 106.68) (xy 252.73 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ef3ecd7-d482-46f2-9e12-802eaed4acf5")
+	)
+	(wire
+		(pts
+			(xy 149.86 49.53) (xy 144.78 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92f2fc23-064b-462f-a370-2d5bdb12e611")
+	)
+	(wire
+		(pts
+			(xy 147.32 73.66) (xy 146.05 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95c55693-56e1-4748-94ac-cfd0e6366e23")
+	)
+	(wire
+		(pts
+			(xy 109.22 170.18) (xy 95.25 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99d1dfe3-6f01-485a-a2c7-1c381795dce7")
+	)
+	(wire
+		(pts
+			(xy 257.81 27.94) (xy 252.73 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ecda7ea-d2e2-4b41-8eef-d631a7e4b49a")
+	)
+	(wire
+		(pts
+			(xy 66.04 132.08) (xy 53.34 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f027fb5-42ef-44c6-8044-d4eaf8f8101f")
+	)
+	(wire
+		(pts
+			(xy 257.81 91.44) (xy 252.73 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f8e0254-420d-4fd1-b235-911581e63371")
+	)
+	(wire
+		(pts
+			(xy 252.73 119.38) (xy 257.81 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0b004d7-661d-4e24-a385-9b80cec948af")
+	)
+	(wire
+		(pts
+			(xy 109.22 190.5) (xy 95.25 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a537c5c0-239b-4a5d-83f5-9b7b61661028")
+	)
+	(wire
+		(pts
+			(xy 172.72 109.22) (xy 177.8 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a59b322c-f1a4-46ef-a7e5-9e3bb13c2a91")
+	)
+	(wire
+		(pts
+			(xy 149.86 46.99) (xy 144.78 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5b75e5f-ead3-4f68-b830-9020b492cca4")
+	)
+	(wire
+		(pts
+			(xy 106.68 135.89) (xy 129.54 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a66554f8-6263-4ebb-9c98-8274449a6d0b")
+	)
+	(wire
+		(pts
+			(xy 257.81 68.58) (xy 252.73 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a69c2d62-f6ff-4d7a-a65b-698b2299bcf3")
+	)
+	(wire
+		(pts
+			(xy 257.81 83.82) (xy 252.73 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a730ecc1-3102-4d2e-a6ef-e3bf5d42c797")
+	)
+	(wire
+		(pts
+			(xy 175.26 101.6) (xy 175.26 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa7cd0b9-0cee-43f9-84cc-d237a97e014d")
+	)
+	(wire
+		(pts
+			(xy 25.4 86.36) (xy 43.18 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "accae35e-e8ad-436a-afff-e9d0c9cc3e65")
+	)
+	(wire
+		(pts
+			(xy 24.13 176.53) (xy 29.21 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b02d0ace-b8dc-4c1b-8360-73f31c6c6706")
+	)
+	(wire
+		(pts
+			(xy 257.81 132.08) (xy 252.73 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b06a5e64-c37c-49f4-b03b-b4852950973b")
+	)
+	(wire
+		(pts
+			(xy 257.81 33.02) (xy 252.73 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b155b709-b972-4394-aa28-2a4786ec9014")
+	)
+	(wire
+		(pts
+			(xy 147.32 68.58) (xy 146.05 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2afc972-3477-4948-9fe6-fd8c58d646d5")
+	)
+	(wire
+		(pts
+			(xy 158.75 149.86) (xy 173.99 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4f8adbd-4da4-4779-b7d7-ffeeca454166")
+	)
+	(wire
+		(pts
+			(xy 109.22 151.13) (xy 95.25 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb0be82c-ecf3-4a11-9474-66b32a754964")
+	)
+	(wire
+		(pts
+			(xy 45.72 49.53) (xy 40.64 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf2be8f0-1573-4952-b92d-f3d1282ad74e")
+	)
+	(wire
+		(pts
+			(xy 43.18 81.28) (xy 25.4 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0651a9f-182a-46df-9ac6-a6a4ce4ace3d")
+	)
+	(wire
+		(pts
+			(xy 86.36 73.66) (xy 83.82 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3edd446-8b7e-4189-8d72-cc409cd60f33")
+	)
+	(wire
+		(pts
+			(xy 43.18 83.82) (xy 25.4 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4d9d56e-23ec-4266-8c78-e33bdb85e137")
+	)
+	(wire
+		(pts
+			(xy 105.41 52.07) (xy 100.33 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c879fd86-9d00-461c-b507-43ccebd7b4a0")
+	)
+	(wire
+		(pts
+			(xy 172.72 97.79) (xy 182.88 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c883718f-fbef-48de-b3c5-e992cd26bb85")
+	)
+	(wire
+		(pts
+			(xy 149.86 44.45) (xy 144.78 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9ffdcba-780c-45de-a4d1-3d369c5c0c5e")
+	)
+	(wire
+		(pts
+			(xy 257.81 15.24) (xy 252.73 15.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca659a51-7809-4045-b149-86f328e33c9f")
+	)
+	(wire
+		(pts
+			(xy 175.26 101.6) (xy 172.72 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cca8647c-5704-4e8a-a5ad-a18aedf61576")
+	)
+	(wire
+		(pts
+			(xy 105.41 46.99) (xy 72.39 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd130852-3761-43e5-8f39-19972cb7c6d4")
+	)
+	(wire
+		(pts
+			(xy 105.41 49.53) (xy 100.33 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd260a78-ef17-4373-bfe1-f4ad7f2fc49c")
+	)
+	(wire
+		(pts
+			(xy 149.86 52.07) (xy 144.78 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf4300da-128c-4441-a034-9e6b5b512a3a")
+	)
+	(wire
+		(pts
+			(xy 257.81 71.12) (xy 252.73 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf931fe6-eb62-4822-bc00-27cde33cc7c0")
+	)
+	(wire
+		(pts
+			(xy 83.82 96.52) (xy 86.36 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d00351da-39a3-4ab0-8925-8a1d801a294b")
+	)
+	(wire
+		(pts
+			(xy 129.54 133.35) (xy 113.03 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d165d388-6566-44f8-9c23-4ed492287ee2")
+	)
+	(wire
+		(pts
+			(xy 45.72 52.07) (xy 40.64 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3cd90aa-bdd5-40d3-b40f-74e834d7d830")
+	)
+	(wire
+		(pts
+			(xy 36.83 96.52) (xy 36.83 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da842528-7e5b-4d55-8640-88d9c92a6cf6")
+	)
+	(wire
+		(pts
+			(xy 109.22 180.34) (xy 95.25 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db08f7d8-eda5-4d29-b82c-76c01338aa75")
+	)
+	(wire
+		(pts
+			(xy 39.37 101.6) (xy 39.37 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db3a5bde-525d-4218-b96a-7cf7000a4f27")
+	)
+	(wire
+		(pts
+			(xy 27.94 148.59) (xy 24.13 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc22c58d-5c05-4f01-ab54-8c987ed8e08b")
+	)
+	(wire
+		(pts
+			(xy 87.63 93.98) (xy 83.82 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd428826-e66d-4e15-b1bd-da7c10883668")
+	)
+	(wire
+		(pts
+			(xy 109.22 160.02) (xy 96.52 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dded9ec3-3447-40a0-a15a-f922492e3a41")
+	)
+	(wire
+		(pts
+			(xy 257.81 81.28) (xy 252.73 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de0af1b5-f04a-4d62-810e-9e843d81f3b2")
+	)
+	(wire
+		(pts
+			(xy 257.81 66.04) (xy 252.73 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df668c80-f5f0-4d7b-8aa3-2d3e1d30ab67")
+	)
+	(wire
+		(pts
+			(xy 181.61 149.86) (xy 187.96 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0023e40-b697-4178-b345-fa389b1de2ba")
+	)
+	(wire
+		(pts
+			(xy 257.81 157.48) (xy 252.73 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e119457a-0280-4cca-bfb4-0eabb3d16933")
+	)
+	(wire
+		(pts
+			(xy 257.81 144.78) (xy 252.73 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e41087be-62a2-4bd3-8b70-90ef098d091f")
+	)
+	(wire
+		(pts
+			(xy 257.81 104.14) (xy 252.73 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e72b90e6-f89a-426e-875d-81ce7385e9c1")
+	)
+	(wire
+		(pts
+			(xy 257.81 154.94) (xy 252.73 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e91de0ca-8a54-475f-94b8-7f13e8178476")
+	)
+	(wire
+		(pts
+			(xy 86.36 81.28) (xy 83.82 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e95c9f07-e0ad-4cdf-99a5-38ea9cc6095d")
+	)
+	(wire
+		(pts
+			(xy 39.37 101.6) (xy 43.18 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb23db92-b3d1-4d69-887d-0d92998e8ab4")
+	)
+	(wire
+		(pts
+			(xy 31.75 132.08) (xy 19.05 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed8b1e8a-7e18-473c-b70e-af5139c11c5e")
+	)
+	(wire
+		(pts
+			(xy 38.1 99.06) (xy 38.1 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edc81301-6dfd-4379-9051-a6fd142d82d4")
+	)
+	(wire
+		(pts
+			(xy 41.91 132.08) (xy 46.99 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef2e5843-f46e-48cf-b997-b5c3c7099d39")
+	)
+	(wire
+		(pts
+			(xy 257.81 17.78) (xy 252.73 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f04775e7-b28c-4c91-8d85-9f6007068a73")
+	)
+	(wire
+		(pts
+			(xy 257.81 134.62) (xy 252.73 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0fb3ce0-455a-4298-93a6-5ccda0fa79bb")
+	)
+	(wire
+		(pts
+			(xy 45.72 46.99) (xy 40.64 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f478b8f3-61c3-46ab-880f-ecd8b05cf87b")
+	)
+	(wire
+		(pts
+			(xy 105.41 44.45) (xy 72.39 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4f36b6b-410c-428e-93df-131f070d76e5")
+	)
+	(wire
+		(pts
+			(xy 257.81 20.32) (xy 252.73 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5b08532-67a2-4974-b38e-7c9d4a986371")
+	)
+	(wire
+		(pts
+			(xy 64.77 166.37) (xy 52.07 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f861169e-9d69-47f4-90da-030d82e419d2")
+	)
+	(wire
+		(pts
+			(xy 83.82 101.6) (xy 86.36 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8ba4e67-84be-41e6-9ad8-318204599607")
+	)
+	(wire
+		(pts
+			(xy 83.82 99.06) (xy 86.36 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb75bb16-df3d-4177-8d88-771a0cb7b81f")
+	)
+	(wire
+		(pts
+			(xy 45.72 41.91) (xy 40.64 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe65e1da-f1d8-4fb7-ac69-aab3a2be25ab")
+	)
+	(wire
+		(pts
+			(xy 257.81 40.64) (xy 252.73 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fefaf9a6-7640-4ecf-85f3-3efda1453d2a")
+	)
+	(label "+5V_LOGIC"
+		(at 86.36 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0231b9ed-67c5-45e3-acfe-b2f6838031f7")
+	)
+	(label "+5V_ESC_BEC"
+		(at 158.75 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05a2af10-cf4c-4bec-9f42-dc859ce78dee")
+	)
+	(label "ESP_SD_MISO"
+		(at 40.64 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "08a39985-75d8-4670-8a76-e0924dd01990")
+	)
+	(label "SERVO_CH7_PWM"
+		(at 25.4 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0aab603b-054d-4bc4-a415-3cc8403a1a3f")
+	)
+	(label "SERVO_CH3_PWM"
+		(at 252.73 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0ac2bcd6-9f42-4cde-8fec-b442a45da161")
+	)
+	(label "ESP_3V3"
+		(at 95.25 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0db2be15-70ba-4157-88f3-e3de4ea94213")
+	)
+	(label "OUTBOARD_RX_FROM_TEENSY_TX"
+		(at 86.36 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0dd7adb1-b851-451d-ac38-8e9f53650248")
+	)
+	(label "+5V_ESC_BEC"
+		(at 252.73 15.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0f295e03-809e-42fe-8770-133e1b638231")
+	)
+	(label "GND"
+		(at 252.73 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1122d0d2-12d6-4c1a-8d85-ef4a0f95e4f8")
+	)
+	(label "SERVO_CH2_PWM"
+		(at 252.73 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "115c57a0-a0f3-4633-88db-a80ae520c82f")
+	)
+	(label "OUTBOARD_RX_FROM_TEENSY_TX"
+		(at 72.39 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "130315c6-0e01-4168-9a70-5558ee07aa36")
+	)
+	(label "SERVO_CH6_PWM"
+		(at 252.73 147.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1626cda5-abcb-4ba4-817f-cae0d3bac8d2")
+	)
+	(label "CRSF_TX_FROM_TEENSY"
+		(at 86.36 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "181ff5ee-b041-4d57-af21-f31b4d1fb2c4")
+	)
+	(label "SERVO_CH7_PWM"
+		(at 252.73 160.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1e3830aa-f3c1-40a7-ac47-bc9a03718bb9")
+	)
+	(label "GND"
+		(at 252.73 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1e7d08e0-1a10-4423-b8f8-71d6c5f893a2")
+	)
+	(label "+5V_ESC_BEC"
+		(at 252.73 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1ee2c6a6-9f4c-4fa4-8dc5-b99d8701f639")
+	)
+	(label "GND"
+		(at 252.73 157.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3098e52f-5c24-486a-8b7c-5c70b2efd1f9")
+	)
+	(label "+5V_LOGIC"
+		(at 100.33 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "32c4fe84-8473-4b44-a63c-6cd1dce6ebf5")
+	)
+	(label "GND"
+		(at 252.73 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "363ed19f-a0f6-41dc-a47f-75f3e7eeb455")
+	)
+	(label "CRSF_TX_FROM_TEENSY"
+		(at 146.05 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3ab9a8da-14db-4490-96c3-30bf9178a339")
+	)
+	(label "+5V_PM_BEC"
+		(at 113.03 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3cce1510-91f2-410a-b7cd-dc9bbd6ad69f")
+	)
+	(label "FAST_SPI_MISO_TEENSY_SDO_TO_ESP"
+		(at 53.34 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d4b2091-6d42-44dd-b142-5d1f45b24a33")
+	)
+	(label "+5V_ESC_BEC"
+		(at 252.73 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "41933454-6f94-4280-adfd-7239f6613541")
+	)
+	(label "SERVO_CH6_PWM"
+		(at 25.4 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41cc3abe-9c42-4f4f-8645-d76f2d8e99b8")
+	)
+	(label "+5V_ESC_BEC"
+		(at 29.21 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "44778076-a953-4e86-8298-a9982d3c3f4b")
+	)
+	(label "FAST_SPI_MOSI_ESP_TO_TEENSY_SDI"
+		(at 177.8 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4795dc69-3042-45ac-9594-c720c1e4a708")
+	)
+	(label "+5V_PM_BEC"
+		(at 29.21 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49ee1c7e-5523-4d1a-ba9e-37f845fce841")
+	)
+	(label "+5V_ESC_BEC"
+		(at 19.05 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b163b74-590c-4a3d-8d5d-b9b81cf7ab43")
+	)
+	(label "GND"
+		(at 252.73 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4d558811-96be-47e7-b385-91071c75408f")
+	)
+	(label "SERVO_CH5_PWM"
+		(at 252.73 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5040c1e4-e391-4408-b2be-365fadd58894")
+	)
+	(label "SERVO_CH2_PWM"
+		(at 25.4 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "50eeea3b-d79e-4a25-ad56-66cd1d8ad536")
+	)
+	(label "+5V_PM_BEC"
+		(at 154.94 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "535edf2a-05ab-4f3f-a4e4-875f08d4e14b")
+	)
+	(label "+5V_ESC_BEC"
+		(at 52.07 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "54355ea6-2ba0-4aa6-a118-1ed8e6563969")
+	)
+	(label "GND"
+		(at 252.73 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "54a79e88-3794-439f-9165-82bd862b4560")
+	)
+	(label "+5V_ESC_BEC"
+		(at 95.25 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "55bd6e56-efd8-47fc-896c-ed8d10ef82b8")
+	)
+	(label "GND"
+		(at 252.73 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "55d3c149-9f0f-480c-995d-587a59b8e600")
+	)
+	(label "GND"
+		(at 46.99 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "568edb17-f09b-4a2f-bd5c-c7e5f30a6d8d")
+	)
+	(label "GND"
+		(at 40.64 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5767228e-8cd2-469e-b26d-f9fa21d04e7d")
+	)
+	(label "OUTBOARD_TX_TO_TEENSY_RX"
+		(at 86.36 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "57bbab17-53ad-4151-9678-ed28b73b6d57")
+	)
+	(label "+5V_LOGIC"
+		(at 146.05 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5845edd7-dd0c-4860-9f97-8cfcd054c65a")
+	)
+	(label "GND"
+		(at 87.63 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "585fddff-d603-41c2-b9b4-a58aa1f708b2")
+	)
+	(label "+5V_LOGIC"
+		(at 52.07 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5d2b8a95-beb6-4b17-918a-36a1dbca1cfb")
+	)
+	(label "SERVO_CH5_PWM"
+		(at 25.4 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "609e6ab8-dd22-4c17-97e2-32cc4d46e7c7")
+	)
+	(label "SERVO_CH3_PWM"
+		(at 252.73 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "64c35b4b-e5e3-46bc-8480-53a286219de3")
+	)
+	(label "OUTBOARD_TX_TO_TEENSY_RX"
+		(at 72.39 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "675b4afe-c657-47bd-a146-972624bee4cb")
+	)
+	(label "GND"
+		(at 252.73 17.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6876884f-dd4d-42ee-9767-33d8036fc939")
+	)
+	(label "BATTERY_VOLTAGE_SENSE"
+		(at 106.68 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6900fb1e-8095-4001-a715-d1f51f3642ca")
+	)
+	(label "FAST_SPI_SCK"
+		(at 86.36 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6aa04a7b-5050-4e81-a639-12e8f9560ffa")
+	)
+	(label "+5V_ESC_BEC"
+		(at 252.73 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6aa801eb-ab17-45e7-bb2f-4aabb59c568f")
+	)
+	(label "+5V_ESC_BEC"
+		(at 252.73 27.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6d7b5a18-f89b-4351-9275-19b8a99d0ba9")
+	)
+	(label "ESP_SD_SCK"
+		(at 40.64 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6e25e1d5-93a0-4d20-bb18-e37d3caefcdc")
+	)
+	(label "+5V_LOGIC"
+		(at 182.88 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e4a07ed-459a-461a-b02b-de62ce8d1402")
+	)
+	(label "+5V_ESC_BEC"
+		(at 52.07 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "72945311-9c6e-4ab9-a1a7-5835fa636700")
+	)
+	(label "+5V_ESC_BEC"
+		(at 252.73 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "753a9af9-2bc7-46ec-aa2e-a57891e9b963")
+	)
+	(label "IMU_SDA"
+		(at 144.78 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "75a28d16-5e49-4015-b772-c45a47695ff7")
+	)
+	(label "+5V_LOGIC"
+		(at 144.78 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "77d1a11d-6437-44db-bb94-d0cc6e7007fd")
+	)
+	(label "GND"
+		(at 81.28 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e0d481a-1489-4832-b229-29cc02d22913")
+	)
+	(label "GND"
+		(at 96.52 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7ef308cd-5437-46ac-89d5-bb191293da5f")
+	)
+	(label "+5V_LOGIC"
+		(at 50.8 189.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "84ae999c-da53-4e7c-ba69-37ad7a047e9d")
+	)
+	(label "+5V_ESC_BEC"
+		(at 252.73 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "88bd6644-57df-46ee-a433-5e2008c57318")
+	)
+	(label "GND"
+		(at 38.1 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "89f9da3b-317a-4374-97f1-c5de63de69da")
+	)
+	(label "SERVO_CH1_PWM"
+		(at 252.73 20.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b263216-2c91-40e4-b57d-4fd9a3e02c7f")
+	)
+	(label "GND"
+		(at 80.01 189.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f686d45-662d-4b93-9177-bbbc2a13d9db")
+	)
+	(label "IMU_SCL"
+		(at 144.78 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "905a992d-cafb-4f11-8b4f-2fd37719aa15")
+	)
+	(label "CRSF_RX_TO_TEENSY"
+		(at 86.36 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9097ef38-1156-41ea-bd34-fde566207d24")
+	)
+	(label "+5V_ESC_BEC"
+		(at 252.73 154.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "947bbc8e-ce0d-4539-afaa-1f82b5cbe821")
+	)
+	(label "GND"
+		(at 252.73 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "964a5e93-d69e-414a-a669-c02ed9be53cc")
+	)
+	(label "GND"
+		(at 78.74 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "98a32e45-81a8-4af2-a337-abbf4c064f7d")
+	)
+	(label "SERVO_CH2_PWM"
+		(at 252.73 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "99a534c8-0781-41e4-8e46-9b0da2b00887")
+	)
+	(label "ESP_SD_MOSI"
+		(at 119.38 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9a085f0d-eab6-4552-bd4f-59bfc33cea4f")
+	)
+	(label "GND"
+		(at 168.91 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ac1cf45-23a6-4811-ac2d-fb4d777119e2")
+	)
+	(label "GND"
+		(at 182.88 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9af4c28b-4636-494e-9dee-b46523f568ef")
+	)
+	(label "FAST_SPI_CS"
+		(at 53.34 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d01c083-5c02-43f3-95fc-0002b56eb113")
+	)
+	(label "ESP_SD_MOSI"
+		(at 40.64 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0443e6a-8801-4c3c-b9ea-e4a86e89ae2a")
+	)
+	(label "IMU_SCL"
+		(at 87.63 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1303218-2e34-45a5-8677-0d0fea70898d")
+	)
+	(label "GND"
+		(at 100.33 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a2eb7dc0-734b-49e4-8398-ccf89abe5395")
+	)
+	(label "SERVO_CH4_PWM"
+		(at 252.73 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a4a8b114-9ab3-4654-af9a-9f716cab0539")
+	)
+	(label "+5V_ESC_BEC"
+		(at 252.73 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a4d193be-0a04-4c61-a2e7-2ebebca74630")
+	)
+	(label "IMU_CS_OR_AUX"
+		(at 144.78 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a5ba9e67-bba1-46cf-bcc7-e4f777e87b4d")
+	)
+	(label "TEENSY_3V3"
+		(at 95.25 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a6a83a95-09d7-4023-ac15-59fd03fb6d97")
+	)
+	(label "BATTERY_VOLTAGE_SENSE"
+		(at 86.36 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa990d3b-5e4a-40fd-82fe-27b359d3aa91")
+	)
+	(label "ESP_SD_CS"
+		(at 40.64 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ac58c1da-4ab7-4970-98c2-98537da8ebf5")
+	)
+	(label "+5V_ESC_BEC"
+		(at 53.34 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac601f1a-d8ad-47cd-8312-65dc13406cbc")
+	)
+	(label "BATTERY_CURRENT_SENSE"
+		(at 86.36 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b106f940-86c7-4af5-9caa-543799cc3f96")
+	)
+	(label "SERVO_CH1_PWM"
+		(at 252.73 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b16203ca-95b3-4eeb-9aa3-77d4cf82d225")
+	)
+	(label "ESP_SD_CS"
+		(at 116.84 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b1779e61-aaf3-4f98-aff5-9ef4d3ee2796")
+	)
+	(label "ESP_SD_SCK"
+		(at 118.11 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b71fed9f-278e-4402-b6d6-a72cef9dc57f")
+	)
+	(label "GND"
+		(at 81.28 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b780daf7-c872-4322-9ca1-dd877fd04629")
+	)
+	(label "FAST_SPI_MOSI_ESP_TO_TEENSY_SDI"
+		(at 53.34 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8a1c9ca-65c6-4e1f-9517-c80f5e53b417")
+	)
+	(label "FAST_DATA_READY"
+		(at 53.34 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba2fc899-bc86-47b0-bd1a-239414054dc8")
+	)
+	(label "SERVO_CH3_PWM"
+		(at 25.4 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd31f2fe-36ad-4db9-807d-e63429da1c51")
+	)
+	(label "OUTBOARD_SPARE2"
+		(at 100.33 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c2ff4901-142a-40f1-9547-5fc5dc0a1ea3")
+	)
+	(label "CRSF_RX_TO_TEENSY"
+		(at 146.05 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c4b62760-7e22-4ace-9d3a-417fff98183c")
+	)
+	(label "GND"
+		(at 252.73 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c9723633-5d88-485e-9e95-7ab0a4092d79")
+	)
+	(label "+5V_ESC_BEC"
+		(at 252.73 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cac6bd1b-2546-4323-a703-bde507a98993")
+	)
+	(label "GND"
+		(at 252.73 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cc637925-e946-4b55-80a3-3e8594bd5b3c")
+	)
+	(label "FAST_SPI_SCK"
+		(at 177.8 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd0dcb3c-0632-41ce-8f8d-44e31d18f893")
+	)
+	(label "GND"
+		(at 146.05 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cef1a405-b4e5-4d0b-9144-11cbf2437147")
+	)
+	(label "+5V_LOGIC"
+		(at 187.96 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1d4c46d-d221-417b-9bb1-b2d6c7ea2130")
+	)
+	(label "SERVO_CH4_PWM"
+		(at 25.4 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1f1d60d-8f7d-4a2e-8c36-240211da0919")
+	)
+	(label "+5V_ESC_BEC"
+		(at 252.73 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d2e9cbb3-653d-4a8e-8b0b-d52ee7065d0a")
+	)
+	(label "GND"
+		(at 113.03 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d495e3bd-d9bd-4d43-8d0d-733640da09d4")
+	)
+	(label "GND"
+		(at 29.21 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d5510d57-3d4d-4cfb-ae19-6003a9ece249")
+	)
+	(label "+5V_LOGIC"
+		(at 95.25 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d5ada7d0-8823-4281-8b20-95d3b62e292c")
+	)
+	(label "IMU_SDA"
+		(at 87.63 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da4488ad-dc0b-41b6-a880-cfe4ea69cce6")
+	)
+	(label "SERVO_CH4_PWM"
+		(at 252.73 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "db0e8941-c8ef-4cbc-9a4f-927855c00103")
+	)
+	(label "GND"
+		(at 80.01 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "de4685d8-dc41-4b66-8860-166cb0d684a6")
+	)
+	(label "TEENSY_3V3"
+		(at 86.36 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e38a7952-5b83-44cf-8287-dfab05d8250f")
+	)
+	(label "SERVO_CH5_PWM"
+		(at 252.73 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e4f0f17e-b887-4a73-b30e-6b0213bca662")
+	)
+	(label "GND"
+		(at 252.73 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e52e3d7a-eb5a-4713-9882-9ee13947000b")
+	)
+	(label "SERVO_CH1_PWM"
+		(at 25.4 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5654e6c-a8be-46e5-a73f-217f98ba8fea")
+	)
+	(label "OUTBOARD_SPARE1"
+		(at 100.33 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e82817ad-1abd-45ef-8cb6-67114e9357d8")
+	)
+	(label "+5V_ESC_BEC"
+		(at 252.73 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "eda7c38b-cead-4de0-889f-a7c016f62fdf")
+	)
+	(label "+5V_LOGIC"
+		(at 52.07 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "edd7b70b-c7ae-4506-be44-ac6527732a9d")
+	)
+	(label "+5V_LOGIC"
+		(at 27.94 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef0293e3-c4cf-4a17-8688-c99f94bb1152")
+	)
+	(label "GND"
+		(at 144.78 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f23e366b-c9c1-4109-99ee-527f1d733f54")
+	)
+	(label "IMU_INT"
+		(at 144.78 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f581d8b6-6254-41e5-9b80-f760f88b3cc6")
+	)
+	(label "+5V_LOGIC"
+		(at 40.64 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f6372dc0-435d-4b5a-8d1f-9cfa11512425")
+	)
+	(label "ESP_3V3"
+		(at 182.88 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f728b1a4-b9dd-407d-a2f8-b9ca5ce78f5e")
+	)
+	(label "ESP_SD_MISO"
+		(at 118.11 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fb7a4903-1be7-435e-aa43-4185d3ad2cd8")
+	)
+	(label "BATTERY_CURRENT_SENSE"
+		(at 106.68 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fbe81a21-0e2a-4e5d-a1cf-84872c525e84")
+	)
+	(label "GND"
+		(at 80.01 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff6b33c6-f337-4a30-b445-01a37809f379")
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x04")
+		(at 157.48 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1051c6f8-61f7-48c5-9d96-c7eb89254ed8")
+		(property "Reference" "J4"
+			(at 157.48 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CRSF_RX"
+			(at 157.734 77.978 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x04_P2.54mm"
+			(at 157.48 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 4 provisional CRSF receiver/radio connector"
+			(at 157.48 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a3c326ae-a4bb-49a1-9163-28230a980383")
+		)
+		(pin "2"
+			(uuid "7b4115a3-53ec-4082-97de-2a467621686b")
+		)
+		(pin "3"
+			(uuid "6169d574-1a4b-49b5-ad8a-aa422724fff4")
+		)
+		(pin "4"
+			(uuid "6c8d7f6b-511e-4c72-b327-55d51d1eb6dd")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:SD_Module_1x06")
+		(at 58.42 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14a07d95-e826-454b-aaca-d0f559a207ac")
+		(property "Reference" "J2"
+			(at 58.42 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESP_AIR_SD_MODULE"
+			(at 58.42 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:SD_Module_1x06_Vertical_Daughterboard"
+			(at 58.42 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Six-pin SPI SD-card breakout module mounted vertically; verify physical orientation before PCB layout"
+			(at 58.42 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e4aeb27e-f069-4c9a-ab62-285e67e93985")
+		)
+		(pin "2"
+			(uuid "c12ca2b1-d2d1-4bc5-9161-9bba832a66b0")
+		)
+		(pin "3"
+			(uuid "ac75c5ab-f1d8-49de-9faf-cd35ceb08dcf")
+		)
+		(pin "4"
+			(uuid "28ebe6b3-4a9c-4f51-909b-f6c284402e21")
+		)
+		(pin "5"
+			(uuid "043f48f8-c62b-417c-b495-ec2d41b252ba")
+		)
+		(pin "6"
+			(uuid "793b4ee0-ce99-4465-bc0b-dad92f38b64a")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_Capacitor")
+		(at 69.85 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1b06a91b-8503-4411-b47f-ee30359e5497")
+		(property "Reference" "C5"
+			(at 69.85 174.244 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10 uF >=10V"
+			(at 69.85 181.356 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_teensy:C_0805"
+			(at 69.85 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ESC/BEC input ceramic capacitor placeholder"
+			(at 69.85 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f05a6b81-caf7-43d5-be81-d3b61ae50d04")
+		)
+		(pin "2"
+			(uuid "bdb6574e-7e8c-4a43-96e2-6b1aad568913")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x03")
+		(at 267.97 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1e4ce86d-faaa-4f4d-b355-2fd5c1de6711")
+		(property "Reference" "J17"
+			(at 267.97 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SERVO_CH7_SPARE"
+			(at 267.97 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+			(at 267.97 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 5 provisional RC servo 1x03 output connector"
+			(at 267.97 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cb69dd98-39e1-4081-b5af-2a98c6e0729d")
+		)
+		(pin "2"
+			(uuid "acd017c7-93f2-4970-874f-0bf112b472b6")
+		)
+		(pin "3"
+			(uuid "b2cb6a4f-e529-4a4c-a6de-87e9ed9c6dce")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_TestPoint")
+		(at 111.76 151.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1f265ed7-c5d8-4961-a0c1-182ce971341c")
+		(property "Reference" "TP1"
+			(at 115.57 150.876 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_ESC_BEC"
+			(at 111.76 153.924 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 111.76 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "5V rail test point"
+			(at 111.76 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87527c64-2399-4b7d-b75a-3f2b52e03d26")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_PWR_FLAG")
+		(at 24.13 173.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3174d5b3-01a4-4647-aef8-882d128623c4")
+		(property "Reference" "#FLG02"
+			(at 24.13 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 24.13 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PWR_FLAG for external ESC/BEC ground return"
+			(at 24.13 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf9629a7-26a8-41f4-9383-41293e430573")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PMEG4050EP")
+		(at 177.8 127 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "33a8a7a0-a68b-4b78-a0bf-74db2ebf44ce")
+		(property "Reference" "D1"
+			(at 177.8 124.206 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMEG4050EP"
+			(at 178.308 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-128"
+			(at 177.8 122.555 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG4050EP.pdf"
+			(at 177.8 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "40V, 5A low Vf Schottky barrier rectifier, SOD-128"
+			(at 177.8 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c262f27b-727f-4923-8b1a-d7c6a62755a0")
+		)
+		(pin "1"
+			(uuid "05e78d33-4a3c-4153-9edf-a74e54f9aa4c")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_Capacitor")
+		(at 69.85 189.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "35cb08df-b634-45e5-89a6-6484e13d2559")
+		(property "Reference" "C6"
+			(at 69.85 185.928 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100 nF"
+			(at 69.85 192.278 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_teensy:C_0805"
+			(at 69.85 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ESC/BEC input decoupling capacitor placeholder"
+			(at 69.85 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "970c4ca3-dcfc-4c70-a76f-7bff49c22490")
+		)
+		(pin "2"
+			(uuid "89b0a74f-96c6-44af-9956-e805d30232d9")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Protection:TVS0500DRV")
+		(at 168.91 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58b9a4e9-7ccf-4ffd-8c07-774a688a624f")
+		(property "Reference" "U3"
+			(at 172.72 133.3499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TVS0500DRV"
+			(at 172.72 135.8899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
+			(at 173.99 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tvs0500.pdf"
+			(at 166.37 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Flat-Clamp Surge Protection Device. 5Vrwm, WSON-6"
+			(at 168.91 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "9b35968a-a406-4c0e-8b7c-b75a0fafef10")
+		)
+		(pin "7"
+			(uuid "cabf0fa0-a2e0-49cc-aecd-59822e5c7f6a")
+		)
+		(pin "6"
+			(uuid "83fa2eeb-983f-4c8a-b16a-17d41637ce5c")
+		)
+		(pin "1"
+			(uuid "2942fc92-e211-4165-a928-bed8379fa9bf")
+		)
+		(pin "2"
+			(uuid "ecd27ef3-a19b-4900-a192-03187a761ce3")
+		)
+		(pin "3"
+			(uuid "e91c18e4-e248-490e-b2a4-4308a2be159a")
+		)
+		(pin "4"
+			(uuid "fdfb78eb-f7dc-4eb1-b1b4-adebabb0f059")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_PWR_FLAG")
+		(at 24.13 187.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c10ea81-a47c-4600-805a-a0c6f0f9c972")
+		(property "Reference" "#FLG4"
+			(at 24.13 182.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 24.13 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PWR_FLAG for external ESC/BEC 5V rail"
+			(at 24.13 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf7ba970-8d9a-49b2-b9e6-71c710443dbd")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "#FLG4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x06")
+		(at 115.57 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5dd85bfb-c3ac-441f-9e3c-17da0095d1c9")
+		(property "Reference" "J5"
+			(at 115.57 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AS_GPS_XIAO_OUTBOARD"
+			(at 115.57 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x06_P2.54mm"
+			(at 115.57 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 4 provisional outboard GPS/airspeed/mag connector"
+			(at 115.57 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d3f9030a-ce0e-48ef-82f2-0fa4cf269f38")
+		)
+		(pin "2"
+			(uuid "06290056-b521-4279-a6c2-25600d1fc251")
+		)
+		(pin "3"
+			(uuid "66e3f222-1c3b-429a-b500-fa800534fa92")
+		)
+		(pin "4"
+			(uuid "37a6ebbc-0378-4776-8635-c77dac1c4678")
+		)
+		(pin "5"
+			(uuid "35b79440-2ac0-485a-b34e-8d5e516d08b8")
+		)
+		(pin "6"
+			(uuid "e95902ac-326d-4e62-9411-f7cd14c19fb0")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x03")
+		(at 267.97 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6637b83c-941a-4463-ba08-6e22881b522d")
+		(property "Reference" "J15"
+			(at 267.97 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SERVO_CH5_B"
+			(at 267.97 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+			(at 267.97 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 5 provisional RC servo 1x03 output connector"
+			(at 267.97 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c3b0057e-6e2e-4de1-b917-238d1454568e")
+		)
+		(pin "2"
+			(uuid "e8b1a6b9-0bf4-474a-be3c-5b86cfae7c64")
+		)
+		(pin "3"
+			(uuid "a19ab3f7-d52b-4ed0-8c8b-dcd3d464b47c")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_TestPoint")
+		(at 111.76 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "68d9a8c0-98a5-4bb5-8bc3-d218c16ace50")
+		(property "Reference" "TP5"
+			(at 116.078 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LOGIC"
+			(at 112.014 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 111.76 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ESP-generated 3V3 rail test point"
+			(at 111.76 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b242ef29-a012-45e5-9c23-acf79a35f68f")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x03")
+		(at 267.97 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "750fbc08-4b7f-40ce-9993-d64c1eb6f303")
+		(property "Reference" "J12"
+			(at 267.97 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SERVO_CH4_A"
+			(at 267.97 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+			(at 267.97 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 5 provisional RC servo 1x03 output connector"
+			(at 267.97 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e8bb2e43-b020-4840-99bf-c9dd078cf29b")
+		)
+		(pin "2"
+			(uuid "1a87e46c-6923-4d80-869f-a5ac5a82372a")
+		)
+		(pin "3"
+			(uuid "c254f912-95e6-46cd-a963-356f329ea250")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x03")
+		(at 267.97 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "77bdd32c-82db-493a-91fe-4cf8570ae53a")
+		(property "Reference" "J10"
+			(at 267.97 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SERVO_CH3_A"
+			(at 267.716 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+			(at 267.97 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 5 provisional RC servo 1x03 output connector"
+			(at 267.97 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d3d87a34-c837-47e9-aae6-cc131807be4b")
+		)
+		(pin "2"
+			(uuid "008c1eb8-07d6-40d0-8ec3-15e40423e98a")
+		)
+		(pin "3"
+			(uuid "b8cfe07f-965e-48a6-b13c-cd82a1cca378")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_Capacitor")
+		(at 71.12 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7af0747f-2c7b-4e7a-aa7d-9cfb142a0e46")
+		(property "Reference" "C2"
+			(at 71.12 128.524 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10 uF >=10V"
+			(at 71.12 135.636 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_teensy:C_0805"
+			(at 71.12 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ESC/BEC input ceramic capacitor placeholder"
+			(at 71.12 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d3cc46c3-05fb-43ce-8f7b-516afdb03a2e")
+		)
+		(pin "2"
+			(uuid "6d3ddfa3-e0de-456f-bd8a-dd770dd4c8f4")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x03")
+		(at 267.97 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7d4e1abd-9fc4-4225-af1d-aa022e96ef2d")
+		(property "Reference" "J13"
+			(at 267.97 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SERVO_CH4_B"
+			(at 267.97 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+			(at 267.97 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 5 provisional RC servo 1x03 output connector"
+			(at 267.97 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c9738b19-1d43-4cd1-8308-6c3a42444b5c")
+		)
+		(pin "2"
+			(uuid "fca70fa7-caee-42b4-ad4d-b156ac6b1fa3")
+		)
+		(pin "3"
+			(uuid "8c050a9b-7026-44ca-848f-53db1ed9c1b9")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_teensy:FAST_Teensy40_DIP_Carrier")
+		(at 63.5 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e85439e-2bc6-4eed-923b-54888d5a74d8")
+		(property "Reference" "U1"
+			(at 63.5 61.976 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FAST Teensy 4.0 DIP Carrier"
+			(at 63.5 65.024 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_teensy:FAST_Teensy40_DIP_Carrier"
+			(at 63.5 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "FAST Teensy 4.0 plug-in side-header carrier"
+			(at 63.5 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "GND1"
+			(uuid "4f770bc4-6d17-41d4-ae63-0c3184f2c101")
+		)
+		(pin "D0"
+			(uuid "1eb91248-038d-48c1-9ebd-bea1902b925b")
+		)
+		(pin "D1"
+			(uuid "bab48bd9-654f-402d-86ae-9e757c94b469")
+		)
+		(pin "D2"
+			(uuid "73ea2ff3-91b4-48a3-aaad-77f32a9d702d")
+		)
+		(pin "D3"
+			(uuid "958d856f-b2fe-4dc9-ba15-103e4f5e8c12")
+		)
+		(pin "D4"
+			(uuid "4cde8e24-00e5-4f27-921b-fe7c12c516f8")
+		)
+		(pin "D5"
+			(uuid "6bbb2897-614a-49af-90ed-e94f9b01ea8d")
+		)
+		(pin "D6"
+			(uuid "4bd5249f-8c8f-4eb5-97db-93afee11b25e")
+		)
+		(pin "D7"
+			(uuid "badeafa4-6a78-4e0c-b4ea-d390c4d87ff2")
+		)
+		(pin "D8"
+			(uuid "ca943bf5-85a4-4d55-92c3-9c9e46ba31e1")
+		)
+		(pin "D9"
+			(uuid "718e2e8a-69d5-4eaf-99be-39066cdbf5cd")
+		)
+		(pin "D10"
+			(uuid "8e47000e-5997-4e95-bd2e-ca167c750c9e")
+		)
+		(pin "D11"
+			(uuid "03a462f2-8dfd-4ffc-a78c-85bf795dad02")
+		)
+		(pin "D12"
+			(uuid "a87b789e-8570-443a-bd77-b478482a2b0e")
+		)
+		(pin "VIN"
+			(uuid "c327d29a-08d4-4bec-ab13-d622740b9070")
+		)
+		(pin "GND2"
+			(uuid "cc17e611-ab48-43d1-9640-b45bcb5afba1")
+		)
+		(pin "3V3"
+			(uuid "7b7328a4-4b99-47d6-93df-770f2c71b16b")
+		)
+		(pin "D23"
+			(uuid "b4891202-b86d-42bd-a6ee-8488a56927e5")
+		)
+		(pin "D22"
+			(uuid "4fc22ad0-bb4e-476e-a7cd-d27674fa3065")
+		)
+		(pin "D21"
+			(uuid "5c63ec87-469e-4b2c-a027-63d2676bc83b")
+		)
+		(pin "D20"
+			(uuid "b43cccdb-62c9-4008-8abd-178c8c199ab8")
+		)
+		(pin "D19"
+			(uuid "51ba2f02-3517-474d-9567-c14131653165")
+		)
+		(pin "D18"
+			(uuid "ddc2f805-c37c-4a57-b520-0e9e5305be3f")
+		)
+		(pin "D17"
+			(uuid "76632dca-4a02-4dbd-9809-392bb9e37993")
+		)
+		(pin "D16"
+			(uuid "e553fbd3-3fb7-44fe-9125-523bd1c4d845")
+		)
+		(pin "D15"
+			(uuid "7584e42d-5ca9-4a40-9386-633aa59425fe")
+		)
+		(pin "D14"
+			(uuid "234115d5-62d5-4f5b-a6c1-a7a538117150")
+		)
+		(pin "D13"
+			(uuid "59ecf331-3733-456f-b378-4837f62f5f61")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "xiao:XIAO-ESP32-S3-DIP")
+		(at 128.27 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7faba578-6567-4a54-9ece-605d1b891f62")
+		(property "Reference" "U2"
+			(at 148.59 83.058 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESP_AIR / XIAO ESP32-S3"
+			(at 148.844 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "xiao:XIAO-ESP32-S3-DIP"
+			(at 128.27 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Seeed XIAO ESP32-S3 used as ESP_AIR"
+			(at 128.27 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ffd272ad-5710-44ec-bcf9-64e9be4f53e1")
+		)
+		(pin "2"
+			(uuid "fc629609-6dc7-454e-ad48-adc9cbf27e6e")
+		)
+		(pin "3"
+			(uuid "aac259ba-2769-4cfe-a3c7-79e4f9a1f44b")
+		)
+		(pin "4"
+			(uuid "3d2180d0-6c11-4eae-b4dd-079bb396c5fd")
+		)
+		(pin "5"
+			(uuid "a5f5dcbb-1db0-41ef-9def-889243df0604")
+		)
+		(pin "6"
+			(uuid "cb24ec80-b26f-4810-99a1-1cb39b7f0daf")
+		)
+		(pin "7"
+			(uuid "376948cb-fc2a-440b-a562-2f49c95a0bc7")
+		)
+		(pin "8"
+			(uuid "ee9db4cd-0dd5-470a-a5d3-5298b7abe74f")
+		)
+		(pin "9"
+			(uuid "2e3703b8-812e-4ba6-bbc1-8d2209ff5304")
+		)
+		(pin "10"
+			(uuid "4135c240-1b80-44c5-81c3-06af0038d400")
+		)
+		(pin "11"
+			(uuid "51d1c4cb-05e5-457d-abf2-e7176e47aad1")
+		)
+		(pin "12"
+			(uuid "8fed701c-2aa1-4efd-8cfd-57fdb4da3c59")
+		)
+		(pin "13"
+			(uuid "1dc9600e-d0af-4af3-b3aa-e08d3db67cb4")
+		)
+		(pin "14"
+			(uuid "0fc3b10b-7eac-4d73-9b50-8d98f1274248")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x03")
+		(at 267.97 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "87c6db0a-8c3c-42d8-bf0c-4e030ba6c686")
+		(property "Reference" "J9"
+			(at 267.97 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SERVO_CH2_B"
+			(at 267.97 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+			(at 267.97 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 5 provisional RC servo 1x03 output connector"
+			(at 267.97 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07a9214d-4e95-463a-95b2-082400d1abec")
+		)
+		(pin "2"
+			(uuid "a13e0dbf-b398-491c-8e06-a924f5378bbe")
+		)
+		(pin "3"
+			(uuid "7c6eb0f6-fcfc-423e-bcc5-6ee8a5e16828")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x03")
+		(at 267.97 17.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8be5f4d0-68b1-4cbe-9a95-860d605d3353")
+		(property "Reference" "J6"
+			(at 267.97 12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SERVO_CH1_A"
+			(at 267.97 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+			(at 267.97 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 5 provisional RC servo 1x03 output connector"
+			(at 267.97 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b5832ad8-82d5-419e-ab6c-e9de1f0fb1c0")
+		)
+		(pin "2"
+			(uuid "dcf7ce0d-6f23-4730-8a8e-44a114af711d")
+		)
+		(pin "3"
+			(uuid "c11973a3-4aa3-4fad-9986-6b0bbc4705bc")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_Capacitor")
+		(at 71.12 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9203ed22-575c-43a3-8a0c-e08a2d7b9670")
+		(property "Reference" "C3"
+			(at 71.12 140.208 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100 nF"
+			(at 71.12 146.558 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_teensy:C_0805"
+			(at 71.12 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ESC/BEC input decoupling capacitor placeholder"
+			(at 71.12 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "75cba4a6-aa24-489d-b75b-f4aa44d2be31")
+		)
+		(pin "2"
+			(uuid "6f7530ad-841f-48b8-8756-cc270087027b")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x03")
+		(at 267.97 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a41cf7db-b877-46bb-a6ed-c7d87023973e")
+		(property "Reference" "J16"
+			(at 267.97 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SERVO_CH6_SPARE"
+			(at 267.97 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+			(at 267.97 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 5 provisional RC servo 1x03 output connector"
+			(at 267.97 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4fe8cd73-db27-4e19-b339-9c8478944b3a")
+		)
+		(pin "2"
+			(uuid "ea45b1b3-8c19-4bab-865a-bb691de3a7b3")
+		)
+		(pin "3"
+			(uuid "1f44d073-daba-4a31-9f54-87ee215a3991")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x03")
+		(at 267.97 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ac7c3c48-465d-470b-b9c2-6759003a8934")
+		(property "Reference" "J7"
+			(at 267.97 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SERVO_CH1_B"
+			(at 267.97 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+			(at 267.97 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 5 provisional RC servo 1x03 output connector"
+			(at 267.97 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83b06b9d-a383-49f5-a8b4-c07108cc8fba")
+		)
+		(pin "2"
+			(uuid "46e35682-4177-42a7-a445-7039efdbfb02")
+		)
+		(pin "3"
+			(uuid "92ccee33-3629-466b-9511-564450a665a2")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_TestPoint")
+		(at 111.76 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b8d84e69-4c31-4d79-a76b-5c220b4df2a2")
+		(property "Reference" "TP2"
+			(at 115.57 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 163.068 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 111.76 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ground test point"
+			(at 111.76 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3292e42-5597-4c5c-9385-ee089127f1ab")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_Capacitor")
+		(at 69.85 166.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ba01a493-cd30-46b2-bad0-93e3752522d8")
+		(property "Reference" "C4"
+			(at 69.85 162.814 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100 uF >=10V bulk"
+			(at 69.85 169.418 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+			(at 69.85 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ESC/BEC input bulk capacitor placeholder"
+			(at 69.85 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99c368b6-8ba7-4e77-842e-61d8f982fc54")
+		)
+		(pin "2"
+			(uuid "ed8bff8d-edf5-4dde-833c-ccf0958c1004")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x03")
+		(at 267.97 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bf7e7ec2-4a00-4f3b-897a-e2344279c507")
+		(property "Reference" "J11"
+			(at 267.97 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SERVO_CH3_B"
+			(at 267.97 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+			(at 267.97 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 5 provisional RC servo 1x03 output connector"
+			(at 267.97 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5c6574d6-a2b5-4368-bc96-ae5d6982e959")
+		)
+		(pin "2"
+			(uuid "1f79c36d-8797-4d59-9c45-484d4ad9bfcf")
+		)
+		(pin "3"
+			(uuid "4ad5dca9-1624-4fab-a382-3fc79f91ba5e")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_TestPoint")
+		(at 111.76 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c76bfb33-e707-4c82-81ed-8248566b9318")
+		(property "Reference" "TP3"
+			(at 115.824 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEENSY_3V3"
+			(at 111.506 173.228 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 111.76 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Teensy-generated 3V3 rail test point"
+			(at 111.76 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "608341b1-6232-4a27-b6a7-66835879281b")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x03")
+		(at 267.97 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cb269107-0473-4a01-a0b7-3807e05a4bc4")
+		(property "Reference" "J8"
+			(at 267.97 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SERVO_CH2_A"
+			(at 267.97 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+			(at 267.97 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 5 provisional RC servo 1x03 output connector"
+			(at 267.97 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "992add51-3d09-4b83-ae72-a8178a87afb8")
+		)
+		(pin "2"
+			(uuid "bb842e83-fe6e-4bb5-8dd9-1257fd18858b")
+		)
+		(pin "3"
+			(uuid "535e09dd-15d4-49e5-bcde-7c215f420680")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 69.85 154.94 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d2216fcc-6e56-4eac-b952-50cd8543ce71")
+		(property "Reference" "C8"
+			(at 69.596 151.13 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470uF 16v"
+			(at 70.358 159.258 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+			(at 73.66 153.9748 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 69.85 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8d6b98ed-df66-48da-990a-474db23920d5")
+		)
+		(pin "1"
+			(uuid "16735e01-8095-45da-acfd-0e810627157e")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x04")
+		(at 139.7 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e2a98961-3162-488d-a883-ab1f44783717")
+		(property "Reference" "J1"
+			(at 146.05 133.3499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PinHeader_1x04"
+			(at 131.826 127.762 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x04_P2.54mm"
+			(at 139.7 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "FAST provisional 1x04 2.54 mm through-hole connector"
+			(at 139.7 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "34d90c67-de5c-4df0-99cc-9814cf193a12")
+		)
+		(pin "4"
+			(uuid "47c509f8-6a6a-4031-b221-7727de385669")
+		)
+		(pin "3"
+			(uuid "2fad86e8-c077-4325-8a2e-c7a72729e994")
+		)
+		(pin "1"
+			(uuid "ab8c60c1-d536-40c2-9dff-50ff3411f392")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x06")
+		(at 160.02 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3dddbec-49e6-4fbe-b9ec-622885907295")
+		(property "Reference" "J3"
+			(at 160.02 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IMU"
+			(at 160.02 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x06_P2.54mm"
+			(at 160.02 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 4 provisional IMU connector"
+			(at 160.02 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1751ad63-e871-4da4-aa5f-8a7b31f466c0")
+		)
+		(pin "2"
+			(uuid "3ad526d3-4254-4d82-af46-3e0c30b32916")
+		)
+		(pin "3"
+			(uuid "88f2ff45-8a4c-4fe8-aa43-b75bb2521fd4")
+		)
+		(pin "4"
+			(uuid "0e2869c8-c2b5-4932-ba41-f806af4179f5")
+		)
+		(pin "5"
+			(uuid "04ab57cf-1d2b-4dd4-b039-4c0bc52b2022")
+		)
+		(pin "6"
+			(uuid "8bca7acb-55ed-4a89-bc7a-71c83660496f")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_TestPoint")
+		(at 111.76 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e6456ab2-fc30-4d95-809b-ae8eed533ddf")
+		(property "Reference" "TP4"
+			(at 116.078 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESP_3V3"
+			(at 112.014 182.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 111.76 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ESP-generated 3V3 rail test point"
+			(at 111.76 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86d67e16-b110-4657-b4ea-157f0a885f99")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_common:PinHeader_1x03")
+		(at 267.97 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ec9ebf0b-f9f2-4f2e-9696-66f49ff72437")
+		(property "Reference" "J14"
+			(at 267.97 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SERVO_CH5_A"
+			(at 267.97 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "fast_common:PinHeader_1x03_P2.54mm"
+			(at 267.97 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Phase 5 provisional RC servo 1x03 output connector"
+			(at 267.97 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d37bfb39-f7ef-4c87-a3b5-4b782e341c5e")
+		)
+		(pin "2"
+			(uuid "9b6c7d64-f3b0-4376-a360-df88a2a4782c")
+		)
+		(pin "3"
+			(uuid "354cf16c-ed15-4f72-afe1-76495b88c57c")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PMEG4050EP")
+		(at 177.8 149.86 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ee0cc967-a041-4f0f-b23f-0227d6c39871")
+		(property "Reference" "D2"
+			(at 177.8 147.066 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMEG4050EP"
+			(at 178.308 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-128"
+			(at 177.8 145.415 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG4050EP.pdf"
+			(at 177.8 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "40V, 5A low Vf Schottky barrier rectifier, SOD-128"
+			(at 177.8 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c3f1c6b4-76ee-4289-af07-9587f28b8ab7")
+		)
+		(pin "1"
+			(uuid "13a50d13-ae51-4331-a6db-20656866995b")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_Capacitor")
+		(at 36.83 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa6d47d6-0634-4921-aeb1-ab4c82d0d9fd")
+		(property "Reference" "C1"
+			(at 36.83 128.524 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100 uF >=10V bulk"
+			(at 36.83 135.128 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+			(at 36.83 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ESC/BEC input bulk capacitor placeholder"
+			(at 36.83 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aa09995a-dcee-4a60-b9a3-9ff803a676ca")
+		)
+		(pin "2"
+			(uuid "2cdb350e-c318-415d-9b4d-3b8dd580e3b5")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 24.13 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa8ff0fa-5df9-4388-a3f6-322c31502f2f")
+		(property "Reference" "#FLG03"
+			(at 24.13 146.685 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "#FLG03"
+			(at 24.13 143.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 24.13 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d5823c92-01a0-48b6-b1d9-2924fe9c01a4")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fast_power:FAST_PWR_FLAG")
+		(at 24.13 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd77aa60-b299-4e69-b015-d55c746a9bab")
+		(property "Reference" "#FLG01"
+			(at 24.13 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 24.13 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PWR_FLAG for external ESC/BEC 5V rail"
+			(at 24.13 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9e733be6-0f13-47b1-b77f-5cfd9df57ed1")
+		)
+		(instances
+			(project "FLIGHT CONTROLLER"
+				(path "/bdae0752-8a30-41a1-9c82-31a8dd37afac"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

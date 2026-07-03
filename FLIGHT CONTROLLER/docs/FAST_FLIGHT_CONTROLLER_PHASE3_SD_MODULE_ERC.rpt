@@ -1,0 +1,102 @@
+ERC report (2026-06-15T11:36:53, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 87.63 mm): Symbol U1 Pin D0 [D0_/_RX1, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 90.17 mm): Symbol U1 Pin D1 [D1_/_TX1, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 92.71 mm): Symbol U1 Pin D2 [D2, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 95.25 mm): Symbol U1 Pin D3 [D3, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 97.79 mm): Symbol U1 Pin D4 [D4, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 100.33 mm): Symbol U1 Pin D5 [D5, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 102.87 mm): Symbol U1 Pin D6 [D6, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 105.41 mm): Symbol U1 Pin D7 [D7, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(68.58 mm, 107.95 mm): Symbol U1 Pin D8 [D8, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 92.71 mm): Symbol U1 Pin D23 [D23_/_A9, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 95.25 mm): Symbol U1 Pin D22 [D22_/_A8, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 97.79 mm): Symbol U1 Pin D21 [D21_/_A7, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 100.33 mm): Symbol U1 Pin D20 [D20_/_A6, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 102.87 mm): Symbol U1 Pin D19 [D19_/_A5_/_SCL, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 105.41 mm): Symbol U1 Pin D18 [D18_/_A4_/_SDA, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 107.95 mm): Symbol U1 Pin D17 [D17_/_A3, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 110.49 mm): Symbol U1 Pin D16 [D16_/_A2, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 113.03 mm): Symbol U1 Pin D15 [D15_/_A1, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(109.22 mm, 115.57 mm): Symbol U1 Pin D14 [D14_/_A0, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(124.46 mm, 114.30 mm): Symbol U2 Pin 3 [GPIO3_A2_D2, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(124.46 mm, 118.11 mm): Symbol U2 Pin 4 [GPIO4_A3_D3, Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(50.80 mm, 154.94 mm): Symbol J1 [FAST_Conn_01x02]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(66.04 mm, 154.94 mm): Symbol C1 [FAST_Capacitor]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(66.04 mm, 160.02 mm): Symbol C2 [FAST_Capacitor]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(66.04 mm, 165.10 mm): Symbol C3 [FAST_Capacitor]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(88.90 mm, 101.60 mm): Symbol U1 [FAST_Teensy40_DIP_Carrier]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(142.24 mm, 153.67 mm): Symbol TP1 [FAST_TestPoint]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(142.24 mm, 157.48 mm): Symbol TP2 [FAST_TestPoint]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(142.24 mm, 161.29 mm): Symbol TP3 [FAST_TestPoint]
+[footprint_link_issues]: The current configuration does not include the footprint library 'fast_teensy'
+    ; warning
+    @(142.24 mm, 165.10 mm): Symbol TP4 [FAST_TestPoint]
+
+ ** ERC messages: 30  Errors 21  Warnings 9
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
