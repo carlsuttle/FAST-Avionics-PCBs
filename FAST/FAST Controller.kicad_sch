@@ -6280,6 +6280,26 @@
 		)
 		(uuid "753642b3-467e-47ef-8bf5-bce64b438ad3")
 	)
+	(label "MUX_SELECT"
+		(at 274.32 177.8 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "95f3ba2c-031b-4f88-9dd6-3772cbbf4c58")
+	)
+	(label "GND"
+		(at 274.32 185.42 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "50644d57-c27b-43ba-a4f2-7fc94621d48e")
+	)
 	(label "ESP_SD_CS"
 		(at 172.72 49.53 0)
 		(effects
@@ -10860,6 +10880,84 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 274.32 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "870f8f21-95c9-4532-98d5-71d44682623e")
+		(property "Reference" "R30"
+			(at 274.32 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 274.32 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 274.32 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 363.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "MUX_SELECT fail-safe pull-down"
+			(at 274.32 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f4af21f3-9317-4440-9107-9f569b16a349")
+		)
+		(pin "1"
+			(uuid "87915a4d-40c8-4a16-9d25-d7cae299c58b")
+		)
+		(instances
+			(project "FAST Controller"
+				(path "/3baf66a4-2d7e-4090-9aca-b1685f5554b9"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 175.26 198.12 0)
 		(unit 1)
 		(body_style 1)
@@ -11976,7 +12074,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 63.5 228.6 0)
+		(at 63.5 228.6 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12054,7 +12152,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 99.06 228.6 0)
+		(at 99.06 228.6 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
