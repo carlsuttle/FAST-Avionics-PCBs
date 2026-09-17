@@ -1,7 +1,8 @@
 # FAST Controller V2 as-built record — 2026-09-17
 
 The manufactured FAST Controller V2 board has been installed and bench-tested
-in the aircraft. The production PCB remains the V2.1 design in this directory.
+in the aircraft. The corrected production files are V2.2; they supersede the
+V2.1 Gerbers.
 
 ## As-built corrections
 
@@ -21,8 +22,9 @@ in the aircraft. The production PCB remains the V2.1 design in this directory.
 
 ## Confirmed connector/pin mapping
 
-- J8 is servo output channel 1.
-- J15 is servo output channel 8.
+- J8 through J15 use the standard servo order: pin 1 ground, pin 2
+  `+5V_ESC_BEC`, and pin 3 signal.
+- J8 is servo output channel 1 and J15 is servo output channel 8.
 - Board channel 8 (`TEENSY_PWM8_RAW`) is routed to Teensy D1, not Teensy D8.
 - Teensy D8 is board channel 7 (`TEENSY_PWM7_RAW`).
 - Flaps are therefore implemented in firmware as CRSF channel 8 -> Teensy D1
@@ -35,3 +37,8 @@ and receiver PWM failover was confirmed through the hardware multiplexers.
 IMU, ESP_AIR, ESP_OUTBOARD, CRSF, SD recording, file listing, and flight-log
 replay were also verified after installation.
 
+## V2.2 production correction
+
+The PCB net assignments for J8 through J15 were corrected from the V2.1
+pin-1-power/pin-2-ground order to pin 1 ground, pin 2 `+5V_ESC_BEC`, and pin 3
+signal. Use `FAST-Controller-V2.2-Gerbers-2026-09-17.zip` for any new boards.

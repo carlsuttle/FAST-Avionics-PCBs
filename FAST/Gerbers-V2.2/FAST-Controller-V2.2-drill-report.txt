@@ -1,0 +1,30 @@
+Drill report for FAST Controller.kicad_pcb
+Created on 2026-09-17T15:46:22
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'FAST Controller-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (19 holes))
+    T2  0.400mm  0.0157"  (6 holes))
+    T3  0.600mm  0.0236"  (2 holes))
+    T4  0.700mm  0.0276"  (4 holes))
+    T5  0.800mm  0.0315"  (36 holes))
+    T6  0.889mm  0.0350"  (14 holes))
+    T7  0.950mm  0.0374"  (36 holes))
+    T8  1.000mm  0.0394"  (52 holes))
+
+    Total plated holes count 169
+
+
+Drill file 'FAST Controller-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  3.200mm  0.1260"  (4 holes))
+
+    Total unplated holes count 4
