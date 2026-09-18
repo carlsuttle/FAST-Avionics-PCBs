@@ -2681,6 +2681,7 @@
 		(symbol "fast_teensy:FAST_Teensy40_DIP_Carrier"
 			(pin_names
 				(offset 1.016)
+				hide
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2750,14 +2751,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(text "FAST Teensy 4.0 DIP Carrier"
-					(at 0 0 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
 					)
 				)
 			)
@@ -5310,7 +5303,7 @@
 		)
 		(uuid "08cdd1d9-bab3-4b13-91d8-0e3ddd5c45f2")
 	)
-	(label "+5V_ESC_BEC"
+	(label "GND"
 		(at 350.52 226.06 0)
 		(effects
 			(font
@@ -5440,7 +5433,7 @@
 		)
 		(uuid "172e3c23-2288-4b4a-957a-2c113099ab4e")
 	)
-	(label "GND"
+	(label "+5V_ESC_BEC"
 		(at 350.52 228.6 0)
 		(effects
 			(font
@@ -5680,7 +5673,7 @@
 		)
 		(uuid "39b59d90-b2b3-4f47-9f0b-90e406a9bfad")
 	)
-	(label "+5V_ESC_BEC"
+	(label "GND"
 		(at 294.64 223.52 0)
 		(effects
 			(font
@@ -6000,7 +5993,7 @@
 		)
 		(uuid "526ca892-1cb9-42f3-920f-0c8c27ad4dba")
 	)
-	(label "GND"
+	(label "+5V_ESC_BEC"
 		(at 294.64 226.06 0)
 		(effects
 			(font
@@ -6160,7 +6153,7 @@
 		)
 		(uuid "6b48146b-a762-402b-afb4-b96e46014e55")
 	)
-	(label "+5V_ESC_BEC"
+	(label "GND"
 		(at 294.64 240.03 0)
 		(effects
 			(font
@@ -6240,7 +6233,7 @@
 		)
 		(uuid "70e849a9-acf0-4144-872d-cc29794b3516")
 	)
-	(label "GND"
+	(label "+5V_ESC_BEC"
 		(at 350.52 245.11 0)
 		(effects
 			(font
@@ -6520,7 +6513,7 @@
 		)
 		(uuid "8ee1beb9-8fd6-40ec-8bc6-12e716afa78c")
 	)
-	(label "GND"
+	(label "+5V_ESC_BEC"
 		(at 294.64 209.55 0)
 		(effects
 			(font
@@ -6530,7 +6523,7 @@
 		)
 		(uuid "91a58e6c-103d-42f4-ba0d-ee93fb64423a")
 	)
-	(label "+5V_ESC_BEC"
+	(label "GND"
 		(at 350.52 242.57 0)
 		(effects
 			(font
@@ -6810,7 +6803,7 @@
 		)
 		(uuid "b0b33b70-f662-48d4-9866-f42a1136750d")
 	)
-	(label "+5V_ESC_BEC"
+	(label "GND"
 		(at 294.64 190.5 0)
 		(effects
 			(font
@@ -6860,7 +6853,7 @@
 		)
 		(uuid "b5fe4c82-3044-4449-b8b9-b65da722ba83")
 	)
-	(label "GND"
+	(label "+5V_ESC_BEC"
 		(at 350.52 212.09 0)
 		(effects
 			(font
@@ -6950,7 +6943,7 @@
 		)
 		(uuid "cae39471-992b-436a-b03b-f3a44d7bb0f9")
 	)
-	(label "GND"
+	(label "+5V_ESC_BEC"
 		(at 350.52 195.58 0)
 		(effects
 			(font
@@ -7220,7 +7213,7 @@
 		)
 		(uuid "e60fd7a9-8f4a-4768-834f-8f49906e2847")
 	)
-	(label "GND"
+	(label "+5V_ESC_BEC"
 		(at 294.64 242.57 0)
 		(effects
 			(font
@@ -7240,7 +7233,7 @@
 		)
 		(uuid "e86a20e6-199c-45db-a96e-9ab2562b4d1f")
 	)
-	(label "+5V_ESC_BEC"
+	(label "GND"
 		(at 350.52 209.55 0)
 		(effects
 			(font
@@ -7270,7 +7263,7 @@
 		)
 		(uuid "eb8754f3-26de-4b0f-9122-9dd2b5f7b2fb")
 	)
-	(label "GND"
+	(label "+5V_ESC_BEC"
 		(at 294.64 193.04 0)
 		(effects
 			(font
@@ -7280,7 +7273,7 @@
 		)
 		(uuid "ec260297-82f1-4d38-91f2-946acec035b8")
 	)
-	(label "+5V_ESC_BEC"
+	(label "GND"
 		(at 294.64 207.01 0)
 		(effects
 			(font
@@ -7300,7 +7293,7 @@
 		)
 		(uuid "f17cae53-d4ac-4d9b-977a-9375908d601e")
 	)
-	(label "+5V_ESC_BEC"
+	(label "GND"
 		(at 350.52 193.04 0)
 		(effects
 			(font
@@ -7422,7 +7415,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000065000001")
 		(property "Reference" "U1"
-			(at 62.23 63.5 0)
+			(at 59.69 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7432,7 +7425,7 @@
 			)
 		)
 		(property "Value" "FAST Teensy 4.0 DIP Carrier"
-			(at 62.23 71.12 0)
+			(at 59.69 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
